@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app">
+    <sys_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <can_edit_in_studio>true</can_edit_in_studio>
+        <enforce_license>none</enforce_license>
+        <guided_setup_guid/>
+        <hide_on_ui>false</hide_on_ui>
+        <ide_created>AES</ide_created>
+        <installed_as_dependency>false</installed_as_dependency>
+        <js_level>es_latest</js_level>
+        <licensable>true</licensable>
+        <license/>
+        <license_category>none</license_category>
+        <license_definition/>
+        <license_model>none</license_model>
+        <logo>b5af39073b80a210f50dda1c95e45a0b</logo>
+        <menu/>
+        <name>Lost/Stolen Device</name>
+        <package_json/>
+        <private>false</private>
+        <restrict_table_access>false</restrict_table_access>
+        <runtime_access_tracking>permissive</runtime_access_tracking>
+        <scope>x_snc_lost_stole_0</scope>
+        <scoped_administration>false</scoped_administration>
+        <short_description>FJ Hackaton 03.2025</short_description>
+        <source>x_snc_lost_stole_0</source>
+        <store_correlation_id/>
+        <store_url/>
+        <subscription_entitlement/>
+        <sys_class_name>sys_app</sys_class_name>
+        <sys_code/>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-07 13:49:27</sys_created_on>
+        <sys_id>99af31873b80a210f50dda1c95e45af0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-07 13:49:30</sys_updated_on>
+        <template/>
+        <trackable>true</trackable>
+        <uninstall_blocked>false</uninstall_blocked>
+        <user_role/>
+        <vendor/>
+        <vendor_prefix/>
+        <version>1.0.0</version>
+    </sys_app>
+    <sys_translated_text action="delete_multiple" query="documentkey=99af31873b80a210f50dda1c95e45af0"/>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>fj logo.png</file_name>
+        <hash>e257d2b521c2b1811d3e75b8a732b2972e89dc813b5c2e845c304062867bd1ce</hash>
+        <image_height>194</image_height>
+        <image_width>259</image_width>
+        <size_bytes>2033</size_bytes>
+        <size_compressed>2031</size_compressed>
+        <state>available</state>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-07 13:49:29</sys_created_on>
+        <sys_id>b5af39073b80a210f50dda1c95e45a0b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-07 13:49:30</sys_updated_on>
+        <table_name>sys_app</table_name>
+        <table_sys_id>99af31873b80a210f50dda1c95e45af0</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="fj logo.png" sys_id="b5af39073b80a210f50dda1c95e45a0b">b5af39073b80a210f50dda1c95e45a0b</sys_attachment>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-07 13:49:29</sys_created_on>
+        <sys_id>f5af39073b80a210f50dda1c95e45a0b</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2696</length>
+        <position>1</position>
+        <sys_attachment display_value="fj logo.png" sys_id="b5af39073b80a210f50dda1c95e45a0b">b5af39073b80a210f50dda1c95e45a0b</sys_attachment>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-07 13:49:29</sys_created_on>
+        <sys_id>79af39073b80a210f50dda1c95e45a0b</sys_id>
+    </sys_attachment_doc>
+</record_update>
