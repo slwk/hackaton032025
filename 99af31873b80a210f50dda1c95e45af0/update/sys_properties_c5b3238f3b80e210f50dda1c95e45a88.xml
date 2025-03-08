@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Network Device Support Group ID</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_snc_lost_stole_0.lost.stolen.device.network</name>
+        <read_roles/>
+        <suffix>lost.stolen.device.network</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>Kamil.Augustyniak@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-07 21:07:07</sys_created_on>
+        <sys_id>c5b3238f3b80e210f50dda1c95e45a88</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_snc_lost_stole_0.lost.stolen.device.network</sys_name>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sys_properties_c5b3238f3b80e210f50dda1c95e45a88</sys_update_name>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:40:11</sys_updated_on>
+        <type>string</type>
+        <value>287ebd7da9fe198100f92cc8d1d2154e</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=c5b3238f3b80e210f50dda1c95e45a88"/>
+</record_update>

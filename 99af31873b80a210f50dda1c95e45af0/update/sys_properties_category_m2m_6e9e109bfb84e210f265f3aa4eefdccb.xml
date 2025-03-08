@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Computer Configuration">26ac1857fb84e210f265f3aa4eefdcb4</category>
+        <order>200</order>
+        <property display_value="x_snc_lost_stole_0.lost.stolen.device.computers.ad.process" name="x_snc_lost_stole_0.lost.stolen.device.computers.ad.process">2783c09ffb40e210f265f3aa4eefdcce</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 01:23:56</sys_created_on>
+        <sys_id>6e9e109bfb84e210f265f3aa4eefdccb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_lost_stole_0.lost.stolen.device.computers.ad.process.Computer Configuration</sys_name>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_6e9e109bfb84e210f265f3aa4eefdccb</sys_update_name>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:23:56</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

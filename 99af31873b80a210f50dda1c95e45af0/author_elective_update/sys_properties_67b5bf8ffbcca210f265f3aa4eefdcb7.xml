@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description>Number of task for computer process. </description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_snc_lost_stole_0.lost.stolen.device.computers.process.count</name>
+        <read_roles/>
+        <suffix>lost.stolen.device.computers.process.count</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-07 22:28:25</sys_created_on>
+        <sys_id>67b5bf8ffbcca210f265f3aa4eefdcb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_lost_stole_0.lost.stolen.device.computers.process.count</sys_name>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sys_properties_67b5bf8ffbcca210f265f3aa4eefdcb7</sys_update_name>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-07 22:28:25</sys_updated_on>
+        <type>integer</type>
+        <value>3</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=67b5bf8ffbcca210f265f3aa4eefdcb7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</application>
+        <file_path/>
+        <instance_id>83a9bffb93311650c4e8ddd548373c69</instance_id>
+        <instance_name>democustomerwf91576</instance_name>
+        <name>sys_properties_67b5bf8ffbcca210f265f3aa4eefdcb7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Number of task for computer process. </description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_snc_lost_stole_0.lost.stolen.device.computers.process.count</name><read_roles/><suffix>lost.stolen.device.computers.process.count</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by><sys_created_on>2025-03-07 22:28:25</sys_created_on><sys_id>67b5bf8ffbcca210f265f3aa4eefdcb7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_lost_stole_0.lost.stolen.device.computers.process.count</sys_name><sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package><sys_policy/><sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope><sys_update_name>sys_properties_67b5bf8ffbcca210f265f3aa4eefdcb7</sys_update_name><sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by><sys_updated_on>2025-03-07 22:28:25</sys_updated_on><type>integer</type><value>3</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=67b5bf8ffbcca210f265f3aa4eefdcb7"/></record_update>]]></payload>
+        <payload_hash>2072661457</payload_hash>
+        <record_name>x_snc_lost_stole_0.lost.stolen.device.computers.process.count</record_name>
+        <reverted_from/>
+        <source>339c6e8ffbc0a210f265f3aa4eefdc79</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-07 22:28:26</sys_created_on>
+        <sys_id>e366b343fb00e210f265f3aa4eefdcdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19572b961830000001</sys_recorded_at>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-07 22:28:26</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>a766b343f600e210a11a56883a7713dc</update_guid>
+        <update_guid_history>a766b343f600e210a11a56883a7713dc:2072661457</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-07 23:26:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>22a8da065d5a4800abb0390ecefc4000</sys_id>
+        <sys_metadata>67b5bf8ffbcca210f265f3aa4eefdcb7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_lost_stole_0.lost.stolen.device.computers.process.count</sys_name>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_scope_delete display_value="">26608f88a1b8430caa47f1bf87b021a1</sys_scope_delete>
+        <sys_update_name>sys_properties_67b5bf8ffbcca210f265f3aa4eefdcb7</sys_update_name>
+        <sys_update_version display_value="sys_properties_67b5bf8ffbcca210f265f3aa4eefdcb7">e366b343fb00e210f265f3aa4eefdcdd</sys_update_version>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-07 23:26:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

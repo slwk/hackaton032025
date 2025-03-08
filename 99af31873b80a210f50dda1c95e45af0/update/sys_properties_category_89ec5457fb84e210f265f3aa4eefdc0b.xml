@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category">
+    <sys_properties_category action="INSERT_OR_UPDATE">
+        <name>Phone Configuration</name>
+        <sys_class_name>sys_properties_category</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 01:16:28</sys_created_on>
+        <sys_id>89ec5457fb84e210f265f3aa4eefdc0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Phone Configuration</sys_name>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sys_properties_category_89ec5457fb84e210f265f3aa4eefdc0b</sys_update_name>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:16:28</sys_updated_on>
+        <title><![CDATA[<p><strong>Phone Device Settings:</strong></p>
+<hr />]]></title>
+    </sys_properties_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=89ec5457fb84e210f265f3aa4eefdc0b"/>
+</record_update>
