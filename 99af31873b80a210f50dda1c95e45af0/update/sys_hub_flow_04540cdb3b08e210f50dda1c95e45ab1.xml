@@ -2,13 +2,12 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>false</active>
+        <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=31701000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>27000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build/>
         <copied_from/>
         <copied_from_name/>
         <description/>
@@ -16,11 +15,10 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>getincidenttaskdescription</internal_name>
-        <label_cache>[{"name":"5dced321-c663-43b3-9a8d-5d1234c40ab1.item.description","label":"2 - For Each➛Incident Task Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"incident_task","column_name":"description","usedInstances":{"7c7ac20e-3ae3-4524-87b9-0fa89f72baa0":["temp-0"]}},{"name":"flow_variable.temp","label":"Flow Variables➛temp","type":"string","base_type":"string","usedInstances":{"5a72f6a8-45ce-45b7-93da-896dc29cc70d":["description-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ad6f5b1a-04fb-4c33-8530-d0f8dba72bbb"}},{"name":"5bbd63c0-8016-4764-af6b-85c282500fca.Records","label":"1 - Look Up Records➛Incident Task Records","reference":"incident_task","reference_display":"Incident Task Records","type":"records","base_type":"records","usedInstances":{"5dced321-c663-43b3-9a8d-5d1234c40ab1":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.incident","label":"Input➛incident","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"5bbd63c0-8016-4764-af6b-85c282500fca":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"4b503fbd-60a4-44c0-b81a-62d68f73852a","uiTypeLabel":"Reference"}}]</label_cache>
-        <latest_snapshot/>
-        <master_snapshot/>
+        <label_cache>[{"name":"5dced321-c663-43b3-9a8d-5d1234c40ab1.item.description","label":"3 - For Each➛Incident Task Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"incident_task","column_name":"description","usedInstances":{"7c7ac20e-3ae3-4524-87b9-0fa89f72baa0":["temp-0"]}},{"name":"flow_variable.temp","label":"Flow Variables➛temp","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"5a72f6a8-45ce-45b7-93da-896dc29cc70d":["description-0"],"4d9ef801-9cf8-4c51-9982-2f797d781066":["temp-0","temp_part-0"],"7c7ac20e-3ae3-4524-87b9-0fa89f72baa0":["temp-0"],"c4962d1f-e7a7-4630-8997-b76d99ad67f5":["description-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ad6f5b1a-04fb-4c33-8530-d0f8dba72bbb"}},{"name":"5bbd63c0-8016-4764-af6b-85c282500fca.Records","label":"2 - Look Up Records➛Incident Task Records","reference":"incident_task","reference_display":"Incident Task","type":"records","base_type":"records","usedInstances":{"5dced321-c663-43b3-9a8d-5d1234c40ab1":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.incident","label":"Input➛incident","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","column_name":"","usedInstances":{"5bbd63c0-8016-4764-af6b-85c282500fca":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4b503fbd-60a4-44c0-b81a-62d68f73852a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"5dced321-c663-43b3-9a8d-5d1234c40ab1.item.close_notes","label":"3 - For Each➛Incident Task Record➛Close notes","reference":"","reference_display":"Close notes","type":"string","base_type":"string","parent_table_name":"incident_task","column_name":"close_notes","usedInstances":{"4d9ef801-9cf8-4c51-9982-2f797d781066":["temp_part-0","description_part-0"]}},{"name":"flow_variable.temp_part","label":"Flow Variables➛temp_part","type":"string","base_type":"string","usedInstances":{"7c7ac20e-3ae3-4524-87b9-0fa89f72baa0":["temp-0"],"c4962d1f-e7a7-4630-8997-b76d99ad67f5":["description-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f6d95d04-0be8-498d-8695-aa36f1b999ca"}},{"name":"5dced321-c663-43b3-9a8d-5d1234c40ab1.item.number","label":"3 - For Each➛Incident Task Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"incident_task","column_name":"number","usedInstances":{"4d9ef801-9cf8-4c51-9982-2f797d781066":["description_part-0"]}},{"name":"flow_variable.description_full","label":"Flow Variables➛description_full","type":"string","base_type":"string","usedInstances":{"7f4a9e45-bfcb-4fa5-b444-99d7feb8e1bf":["description_full-0"],"c4962d1f-e7a7-4630-8997-b76d99ad67f5":["description-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c0d0e273-7c2c-4e33-856a-0b05d254b689"}},{"name":"flow_variable.description_part","label":"Flow Variables➛description_part","type":"string","base_type":"string","usedInstances":{"7f4a9e45-bfcb-4fa5-b444-99d7feb8e1bf":["description_full-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2eb187b8-fb90-478b-938b-4bf259c1e387"}}]</label_cache>
+        <master_snapshot>5e0bfd173b0c2610f50dda1c95e45a23</master_snapshot>
         <master_snapshot_digest/>
-        <name>GetIncidentTaskDescription</name>
+        <name>Incident Tasks Summary</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
@@ -30,7 +28,7 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
@@ -38,15 +36,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>04540cdb3b08e210f50dda1c95e45ab1</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>GetIncidentTaskDescription</sys_name>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Incident Tasks Summary</sys_name>
         <sys_overrides/>
         <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
         <sys_update_name>sys_hub_flow_04540cdb3b08e210f50dda1c95e45ab1</sys_update_name>
-        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
-        <sys_updated_on>2025-03-08 07:21:04</sys_updated_on>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:17:29</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -108,7 +106,7 @@
         <label>incident</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="GetIncidentTaskDescription">04540cdb3b08e210f50dda1c95e45ab1</model>
+        <model display_value="Incident Tasks Summary">04540cdb3b08e210f50dda1c95e45ab1</model>
         <model_id>04540cdb3b08e210f50dda1c95e45ab1</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_04540cdb3b08e210f50dda1c95e45ab1</name>
@@ -194,7 +192,7 @@
         <label>description</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="GetIncidentTaskDescription">04540cdb3b08e210f50dda1c95e45ab1</model>
+        <model display_value="Incident Tasks Summary">04540cdb3b08e210f50dda1c95e45ab1</model>
         <model_id>04540cdb3b08e210f50dda1c95e45ab1</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_output_04540cdb3b08e210f50dda1c95e45ab1</name>
@@ -246,75 +244,101 @@
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
         <display_text/>
-        <flow display_value="GetIncidentTaskDescription">04540cdb3b08e210f50dda1c95e45ab1</flow>
+        <flow display_value="Incident Tasks Summary">04540cdb3b08e210f50dda1c95e45ab1</flow>
         <generation_source/>
-        <order>1</order>
+        <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
         <sys_created_on>2025-03-08 06:31:21</sys_created_on>
         <sys_id>e1f42d1b3b082610f50dda1c95e45a06</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
-        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
-        <sys_updated_on>2025-03-08 07:21:04</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:23:57</sys_updated_on>
         <ui_id>5bbd63c0-8016-4764-af6b-85c282500fca</ui_id>
-        <values>H4sIAAAAAAAA/9VXTU/jMBD9K1XOUZWQUlhuKxASB0ACtBcWWY7jtBauk7WdllL1v+84ttPSBgjd7i4cPZ9vxm8mzv0iYFlwEhzngyjC8eHxURQlSRQNhwnBcZomQ5JG6SANwkDgCQVLjVNO4TjFvDJnJgjLqNBIY/UI8oypkuP5D6e+cOrenVWTMeOZpCI4uX8IgxJLiKqpDE4WGyo9LyniOKUcotyZpL0rgyDsDPiF83YBJoE/ImFDFzIzWKIwoE+aioxCqhxzRcNggkWGdSHnjURSnF0LvhKMmdAQMTDGT4o9Q/jjyNjlFMoi1OqaI3KtsmIyLhih16VmhbASC9QqC15NxJUtwDSZ5rji2jcZJJWCeLQ0mA0Ihyi/HRezG5/wnIm6PKfkBcG8OWGtJUsrTZW5C8rpxFzqBJclEyNUymLKamfAMumPOBz6OS9mkFSxkehjYoD3oUW4fw7ys1r8A0tmqriEMOAMgBiH20a26aqoZN2VKSK8UrVCYqFsrGBZ9wr9qgxKW7WrD9kWgYEikpX6OzhMqStlGXbi9GG0ogQpRMZMTrVGbOAmpPpZgXO2WKgqNeX2Pd2Xy22ud/DYjf6n6/i61tbq3FawG4QXMjcI8d4GAeD+p1HQsvp8k/Aet23B7xCcHL1JgsPVfatCamQ7t8bwbQbvzNBzRnn2YkF3AOedrw3Zeun8NbyOoLnJsbGpD778pv6U9ARAGbL9ZoIzUX8oAeh+eBu9vby+bfCgvv4Va2sZVmSbvbini97z7lu2vlfP3w4gveMtIOrdWZQtwP1+9eEddZO9UTc5+Bh1gTj3iwZ907WWBvv3kLk6b/9s7PGmPbBrzSFePjTUP90tZ/zRnAcm58ZsJh8aznVmWc3ZKwTb82vrlWEL/+Z0j8HV5UN2WNGMZSOqV9m9VVboGeaPbXrHrmaG6vL++OU2eHP2hvFqzmAGkKQKrmr96RbDY2N7PcShFe+2HS6EpqO6eV0hes9L/NS7aTC2AncrgjU5HKcHe3x//YvPm2986/T4/n+JX5VdKfzwG8Hdn1tSDwAA</values>
+        <values>H4sIAAAAAAAA/+WXTU/jMBCG/0qVc1QltBSW2wqEhMSHBIgLu7Ic22ktXCdrOy2l6n/fcWynURvYVioSaI+eGdvvjOdxnOdlxGl0Fp3mwyTB6fHpSZIMBkkyGg0ITrNsMCJZkg2zKI4knjKINDgTDIYzLCo75pJwyqRBBusXsFOuS4EXT9595d29R+cmEy6oYjI6e/4dRyVWsKphKjpbbrh2lSVwxgSEPnpdGzLNomyGqPY523V7Wu/WOQpFrZQkjtirYZIy0JBjoVkcTbGk2BRq0VgUw/ROirVhwqWBFSMb/Kr5G+x7mti4nEFWhDlfM0S+Us6cX2CDH4yqiKmUDyWTghOmXT0oy3ElzHnb5gLuSsML6aa4tN3sQlRTeevKETULhIMBS6VBBCttola5TyN/mBTz+6Dyksu6Jt4pCoJFM8LGKJ5VxupZRkywqW2EKS5LLseoVMWM15NBy7Q/FjDo56KYw6aaj2UfEyu8D3XF/UuwX9TmJ6y4zeIGloHJIIgL6BDkjlAXlapLOUNEVLp2KCy1WytaxZFe6HOBtV5nDiVHfyqr29XBZ4xc0ewUonhpfsISM+aTW8U7kXGcrFuOFJJyq0J34PGrgul0udRVZkvQD/bVapuZneYcEqQ6iwDSeTuNrtQ8Ulu2664FPFLpwZCCPL4TVLD512Nqf0pcCf6BCjn5sMmO1/2kC2WQq2WLFdCECPSAYdTuusXFln8/BnaQFxi4s13byxbvKfYI5JwJ2vVVubSOja/K0f/5VfmSAIAgitzpcSm4rJ8IIPSzyEg+vn5/bPRZ3V4tLqwNa7JNBO6Zove2Nwk7yAkkPMDevUenp0Ni+BbULbP5HQhGD8DgYAAMjg4DwLJJsylkR83Dq9CeZoh/s/F4Mx5asDUhXXUBttee6b57Hq22AR7sRXC72Zzn4p2eO/Dz8R0i48+8AiYw1e+HHL9ozumYmfXuIYoWZo7FS5ffdxwKB1Wn9wlP0eGH2I7SNaJAClJMw+G136IpPJ2275A0dub9rpAdtIRy3ODX3n0jplOhv0aAdDauz6Z9j1w1Vt/kwwM+Jr/slzQcVieD4cy+xR/c4UD4/Rd2C44XrxAAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=04540cdb3b08e210f50dda1c95e45ab1"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=04540cdb3b08e210f50dda1c95e45ab1^sys_idNOT INa1f42d1b3b082610f50dda1c95e45a0a,a1f42d1b3b082610f50dda1c95e45a0b,a5f42d1b3b082610f50dda1c95e45a08"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=04540cdb3b08e210f50dda1c95e45ab1^sys_idNOT IN3c87b59b3bc82610f50dda1c95e45ab9,5a9a7dd33b0c2610f50dda1c95e45a38,8708f9db3bc82610f50dda1c95e45a5f,a5f42d1b3b082610f50dda1c95e45a08,bc87b59b3bc82610f50dda1c95e45ab4"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">a9f42d1b3b082610f50dda1c95e45a09</block>
-        <comment/>
+        <block display_value="">3487b59b3bc82610f50dda1c95e45ab9</block>
+        <comment>Part description</comment>
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="GetIncidentTaskDescription">04540cdb3b08e210f50dda1c95e45ab1</flow>
-        <flow_variables_assigned>temp</flow_variables_assigned>
+        <flow display_value="Incident Tasks Summary">04540cdb3b08e210f50dda1c95e45ab1</flow>
+        <flow_variables_assigned>description_part</flow_variables_assigned>
         <generation_source/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>3</order>
+        <order>4</order>
         <outputs_assigned/>
         <parent_ui_id>5dced321-c663-43b3-9a8d-5d1234c40ab1</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
-        <sys_created_on>2025-03-08 06:31:21</sys_created_on>
-        <sys_id>a1f42d1b3b082610f50dda1c95e45a0a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 07:52:24</sys_created_on>
+        <sys_id>3c87b59b3bc82610f50dda1c95e45ab9</sys_id>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
-        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
-        <sys_updated_on>2025-03-08 07:21:04</sys_updated_on>
-        <ui_id>7c7ac20e-3ae3-4524-87b9-0fa89f72baa0</ui_id>
-        <values>H4sIAAAAAAAA/+1VTW/bMAz9LzrHhh3bWZJbgaFAgW0F1qyXoQgoiU6EyZIry0mzwP99lD/SLjsO2C49xXwSyfeeSOTMbOvr1jcbe9M0amfY+vvTjCkTMPo+MyXZmrEZM1AhfXmsaooOoNsQns+FFCizeRqJxSKL8oxn0QqWMipkOs9ykSfA01hRWiyxEU7VXlnTdVRDqqbWcHocSxEi9kpLhyOJGhz19OjY+nx15E81bjVw1JT44J0yO0rvqWJR5rhKecaT5XyRJmWRSAmpWBWYF4AF3ZsSRy2/KwulKWqmotbJwCCZMXzxaCRSkxJ0gzNWgZHgrTtdEIcg741+BfbK+EFbBS+N+kmll0mShJslkhwxKr+E29GVyRCrBN73ng2IB64nt6xuK/NlYB/8xBJa7d/42TZUD+vAOtAYOZUPe3v8OjW8VaYXOB5qK0BfIvBkA289NuENWrW5MmdAPl0/BGqsqOO2gromZFs7e1B9FyJdxTtNQVxqeyR2YehiEEFhTG5CfEv4xx5+BKeC3M9UhpJDu29GPbd4Fx4a5KIseApRkpc8ykWWRcsiSyKZlEvJ4cOcc8663trtcxtEDSaNdmwHR+nCMJU3ROGAo/LuKYz40P0fr8HflHrfn/f9+d/7412LExZE92NBv3/e6rqwZhKFaoj8JjC9m/53wsGJBkuJt9DRuh9B9ivW/QL6QNN5wQYAAA==</values>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:17:26</sys_updated_on>
+        <ui_id>4d9ef801-9cf8-4c51-9982-2f797d781066</ui_id>
+        <values>H4sIAAAAAAAA/+1VTYvbMBD9K0Xn2Nixndi5LZSFhbYL3XQvZTH6GCeisuSV5WTT4P/eke1kS2gLe9oecgnRG43emzcz+EhM55rOtWtz07Zyo8nq+9OMSO0x/H8kmtZAVkRAy61snDS6bKh1ZEZ2VHU+dDxmgoNI5nHAF4skSBOWBAXNRZCJeJ6kPI0oi0PpoA51VzOwfb/68JYsrkwLpTYO2r5HZiHbRtHD47sJ4FuphIXJLfQDTXJgyep4EXKHBkpFGSjU+eCs1BtMlwJP6aKgiRBJwiI+X8RRlUVC0JgXGaQZzQHvnRL/YP7f2+IpMdKeyIwVXlk0I/DiQAtA8oqqFmakplpQZ+zhjFig4l6rV2ArtcPXiL/80sqf+HQeRZG/WQGWyWGMno/l1JwR5lsjOdwPAkfEUaamHG5UV+svYyW+rVDRTrlTWxHp0HUBjVftZUyaqoet2X89Ed5KPRQ4BZXhVJ1P1KENrMO++d50cn1hzoh8umwQKKiRsaxp0yBSNtbs5MCCoutwo/AQVsrsUZ3fmpByX2GIbtLwFvGPA/xIrfTlfsZnMNnTfdPyuYM7PwBzYHG+ZHlQsSIK0mXOgiLBn5RV86zgMST5kvSDteVz54saTZrsKEdH8cI4AjcoYQdT5f2T38+RfdzjYeb+OTjXfb7u83Wf/999FsBli6rWXsLd6QvtAwecHsl/h/bG/vD1vGL9L3T/VkjrBwAA</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">a9f42d1b3b082610f50dda1c95e45a0a</block>
+        <block display_value="">1e9a7dd33b0c2610f50dda1c95e45a37</block>
+        <comment>Full Description</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Incident Tasks Summary">04540cdb3b08e210f50dda1c95e45ab1</flow>
+        <flow_variables_assigned>description_full</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>5dced321-c663-43b3-9a8d-5d1234c40ab1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:05:53</sys_created_on>
+        <sys_id>5a9a7dd33b0c2610f50dda1c95e45a38</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:17:26</sys_updated_on>
+        <ui_id>7f4a9e45-bfcb-4fa5-b444-99d7feb8e1bf</ui_id>
+        <values>H4sIAAAAAAAA/+1VwW7bMAz9F50TQ43jNMmtwFCgQLcCa9bLVhi0RCdCZcmV5KRZ4H8fZTvpEGw99Zib+UjxkY8kfGC2CXUT/MreeK/Whi1/Po+YMhGj7wMzUCFbMoleOFUHZU1eNlqzEduCbqLrcCi13eVbcAoKjcl5aNv+Mh/F1OBC21JCqXytYf/02XnFRmnpcOiNYGopoGPLw5kr7GvMNRSoif4xOGXW9FxJsqaTBaRSpmnBxWR2xcuMSwlXYpHhNIM5UNzx4T+k+r+IkZI8/khmnYyV8RHDt4BGIpGXoD2OWAVGQrBuf0Icgnww+h3YKBMoG4vBb179ptRzznmMLJHaFNh7T2Y+aN7DYmOVwIeuwB4JUdXBaXVTmW99J3FaWEKjw3FahDSe8mEdq45lDDWVjxu7+34kvFWma3BwaitAnywIJEPRBPRxNo1anYnTI/fnA0KNFTHmFdQ1IXnt7FZ1LFR0law1GUm3JzQA2vEEROwwITUhuSX8Swc/DUv0ldLQ40j3w6jXBu/iAgguOU6u0/G1mIjxFNN0PM9mMOYFz+Qkmxaz+YK1nbT5axOb6kUa5Mh7RSmgX4EbKmGLQ+ftc7ymnr2/um7nPlycy/Vdru9yfZ91fRKF8lTVKpZwd/z7RceetkeJv6GddS+xn3es/QMKmS1hRwcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8f08f9db3bc82610f50dda1c95e45a5e</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="GetIncidentTaskDescription">04540cdb3b08e210f50dda1c95e45ab1</flow>
+        <flow display_value="Incident Tasks Summary">04540cdb3b08e210f50dda1c95e45ab1</flow>
         <flow_variables_assigned/>
-        <generation_source/>
+        <generation_source>flowRecommendation</generation_source>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>4</order>
+        <order>6</order>
         <outputs_assigned>description</outputs_assigned>
-        <parent_ui_id>5dced321-c663-43b3-9a8d-5d1234c40ab1</parent_ui_id>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
-        <sys_created_on>2025-03-08 06:31:21</sys_created_on>
-        <sys_id>a1f42d1b3b082610f50dda1c95e45a0b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 07:54:44</sys_created_on>
+        <sys_id>8708f9db3bc82610f50dda1c95e45a5f</sys_id>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
-        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
-        <sys_updated_on>2025-03-08 07:21:04</sys_updated_on>
-        <ui_id>5a72f6a8-45ce-45b7-93da-896dc29cc70d</ui_id>
-        <values>H4sIAAAAAAAA/41TXW/bMAz8L3pODDuLMydvBYYCBbYVWLO+DINBS1QiVJZcSU6aBf7vo/yRtsGA9ZFHirw7Umdm29C0wW/tjfdqZ9jm15kpwTYM13KJ66z6VKXFYpWlMk+FgIyvc1zmIDibMQM1UqVAz51qgrKGwAPoNqLns9T2WB7AKag0JgHrpuuoQCjfaDg9/q+O75UWDiOl3zPWgKNpAR3bnK9S4dRgqaFCTe0eglNmR88/KmJ6+F7FP6XFQQT6aYR1IvLJZgxfAhqBNFKC9jhjNRgBwbrTBXEI4t7oV2CvTKBuLBa/ePWHWhdpmsZKiSSO45C9hOXo3ADzvVUc7wduPRKif2PS6rY23wcR0XOU0OoweU5I66kfNpF1pDFykg97e/wxDbxVphc4JrXloC8RBLKhagP6uJFWba/MGZCv12tBjTVNLGtoGkLKxtmD6qcQ6TrZaQqS/iLIezrIBHhUmJCbkNwS/qWHH8dz+UZt6HEc99Oo5xbv4trzQvLi8wLmyxQW8+VKLOYVr5DCYi1lvsqqlLOut7Z8bqOowaTRjnJwlAqG7d8QhQNelA8gqe46uj5l4v8ZLnE64jEUyJUn8tuI3b2pEye6L8XfQkfrnqLsV6z7Cw52F9+dAwAA</values>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:17:26</sys_updated_on>
+        <ui_id>c4962d1f-e7a7-4630-8997-b76d99ad67f5</ui_id>
+        <values>H4sIAAAAAAAA/41U224TMRD9FctPUNLtJk1Kkj5FgopKQCVS+kLQymuPE4PX3vqSNlT5d8Z7SUOFEE+Jj+dyzplZP1EbQx2Dv7UL79Xa0Pm3J6oEnVOYyTHMhuV5mU9HF8NcTnIh2JDPJjCeMMHpgBpWAUYK8NypOihrENwyHROKf4XytWa7u2eEb5QWDlKb7wNaM4cVAjg6f3pxFXY1FJqVoDFxGZwya0z/X2J94p/M/ko3NULQ9y2sE4nPcEDhMYARgC0l0x4GtGJGsGDd7oA4YOLG6Gdgo0xolVbs0atfWHqa53mKlIDieOfD4Vh0HvX2WMXhpuXWIIGVuvfO6liZz62I5C5IFnU4cjd6rAd1Yp1odJzkcmMfvvQNr5RpBHaX2nKmDycW0IYyBvBpIlHdvjCnRT6+HAtoqLBjUbG6RqSond2qpguSrrK1xkMmtX1AdmnJMsaTwgzdZNkV4u8a+I45leR+wjKYnNp9Neo+wnUa+2Qq+fTtiJ2OczY6HV+I0WnJS8DjdCbl5GJY5pzuG2uL+5hEtSZ1dhStoxjQTn+BFLYoLrgIPZZEH28HHv8VTM9OVubkZME5eE+SjrNFI4wkYSR69IKEDRApigax5Q/gISPLpgCpog/EQYjOEEaa7yYjqeJN2kFiYlXij/LESukhkHJH3gyJMuS9c9aRD7iOOrVYQmtnQ2bLlE4mEtto8KRbMBJrJFY7pJpyVjRbUcIkfnw9vZQOj6yqNcyRjSN+Y13A0XCyinl+LvrADOe+XoPLeHS4UyFrAosj5y5TrU7ZoUoCz1ZmZbqLvlqzGNgvOypQyKh16lO9en1J6H6/xzdBmfRSte/DttuV7iiAK495twm7PooTO/zqFT+GHqz7mXo+Y/vfAGrGhQcFAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -324,32 +348,58 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="GetIncidentTaskDescription">04540cdb3b08e210f50dda1c95e45ab1</flow>
+        <flow display_value="Incident Tasks Summary">04540cdb3b08e210f50dda1c95e45ab1</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>2</order>
+        <order>3</order>
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
         <sys_created_on>2025-03-08 06:31:21</sys_created_on>
         <sys_id>a5f42d1b3b082610f50dda1c95e45a08</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
-        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
-        <sys_updated_on>2025-03-08 07:21:04</sys_updated_on>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:17:26</sys_updated_on>
         <ui_id>5dced321-c663-43b3-9a8d-5d1234c40ab1</ui_id>
         <values>H4sIAAAAAAAA/51SwW7bMAz9F50TQ7YTL8mtwFCgh7ZAV/QyFAYt0YkwWdIkOaln5N9HxU469LiTzUfy8T2RI7N9dH0Mr/YuBLU3bPfzfcGUSRj9j8xAh2zHVMQusAU7gu5TPI7rppFVKfhyw/NqufpWrZbQVs1ysxbFplhz3grIXlBYL8P5TK1SBadhePt/BnFQWnqcRTrwpC2iZ7vxSyoODmsNDWoaNDNQv5IU5lvZbnO+FWVRlQXnxWaVN1XZ5IUsAWVFddfOh9n0lzdI7BT6Gy99koqCLxh+RDQSaVALOuCCdWAkROsHtou+J8AjyGejh1vFQZlIdCzVfgT1h7hzzlNhi+RI4JS8hfX8kBMsDlYJfHZRWTMhERo99wir+848TfLTCrCFXsfrCgjpA/GhS5qTillS++NgTy/XgffKXPzNSW0F6FsEMXrV9BFDWgNq7Iio7sA5Zfa18/aoLs2kpcv2moKs1fZEQ9O5ZSCS8IyeCLJ7wr9f4DfwKrl4JBpqPl/c17/7NHfyMSuuJ9NUEIRXLt4R3RFncef3dK8TU5gOQ6JQgQa+JuzheuUpMdCSlfgXOln/K0n9xM5/ARF0R8MvAwAA</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7087b59b3bc82610f50dda1c95e45ab4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Incident Tasks Summary">04540cdb3b08e210f50dda1c95e45ab1</flow>
+        <flow_variables_assigned>description_full</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 07:52:24</sys_created_on>
+        <sys_id>bc87b59b3bc82610f50dda1c95e45ab4</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:17:26</sys_updated_on>
+        <ui_id>65778db0-dc5a-4586-b1aa-c13f6f289c3f</ui_id>
+        <values>H4sIAAAAAAAA/+1UTW8aMRD9Lz4DcliWALdIVaRIbSM1NJcqWs3as2DVa2/8AaGI/97xfkCE2t4r5bbzxp557/lpj8zG0MTg1/bOe7UxbPXjZcSUSRh9H5mBGtmKSfTCqSYoa4oqas1GbAc6phZ9SuUbDYfnCyK2SkuH/bwGHI0J6NjqeNUKhwYLDSVquvgUnDIbuq4kVbPpEjIps6zkYjq/4VXOpYQbscxxlsMC6Nxw8Q/0/k48raSOH5ZZJxMzPmL4FtBIpOUVaI8jVoOREKw7nBGHIB+NvgBbZUKnuYY3r37R6AXnPJ2skGSK3pFzWfRuDUZZJfCxJdghAUo9uGh1rM3XTknyGSuIOrzzOXqah01inWj0nKqnrd1/GxbeK9MK7JvaCtDnCgLZUMaAPr1NVOsrczrk8/UDocaaNhY1NA0hRePsTrVbiHQ92WgqJpW2e2KXcjUBkRROyE2Y3BP+qYWfwakk9wuNoctp3XejXiM+pAAILjlOb7PxrZiK8QyzbLzI5zDmJc/lNJ+V88WSnVpri9eYRHUm9XYUnaN0oIvAHVHYYa/89JIS3G3vkt5m7p/B+Uj8R+L/78RLFMoTq3Wi8DD85VPjQOlR4j20t+5n0nPBTr8BAFx7MS8GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=04540cdb3b08e210f50dda1c95e45ab1"/>
-    <sys_hub_flow_variable action="delete_multiple" query="model=04540cdb3b08e210f50dda1c95e45ab1^sys_idNOT INe5f4e91b3b082610f50dda1c95e45ae5"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=04540cdb3b08e210f50dda1c95e45ab1^sys_idNOT IN429a3dd33b0c2610f50dda1c95e45a8a,469a3dd33b0c2610f50dda1c95e45a8e"/>
     <sys_hub_flow_variable action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ad6f5b1a-04fb-4c33-8530-d0f8dba72bbb</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c0d0e273-7c2c-4e33-856a-0b05d254b689</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -373,7 +423,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>temp</element>
+        <element>description_full</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -382,10 +432,10 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>temp</label>
+        <label>description_full</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="GetIncidentTaskDescription">04540cdb3b08e210f50dda1c95e45ab1</model>
+        <model display_value="Incident Tasks Summary">04540cdb3b08e210f50dda1c95e45ab1</model>
         <model_id>04540cdb3b08e210f50dda1c95e45ab1</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_04540cdb3b08e210f50dda1c95e45ab1</name>
@@ -405,17 +455,100 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_variable</sys_class_name>
-        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
-        <sys_created_on>2025-03-08 06:31:21</sys_created_on>
-        <sys_id>e5f4e91b3b082610f50dda1c95e45ae5</sys_id>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:05:51</sys_created_on>
+        <sys_id>429a3dd33b0c2610f50dda1c95e45a8a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
-        <sys_updated_on>2025-03-08 06:31:21</sys_updated_on>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:05:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2eb187b8-fb90-478b-938b-4bf259c1e387</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>description_part</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>description_part</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Incident Tasks Summary">04540cdb3b08e210f50dda1c95e45ab1</model>
+        <model_id>04540cdb3b08e210f50dda1c95e45ab1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_04540cdb3b08e210f50dda1c95e45ab1</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:05:51</sys_created_on>
+        <sys_id>469a3dd33b0c2610f50dda1c95e45a8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:05:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -476,6 +609,630 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_04540cdb3b08e210f50dda1c95e45ab1"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>getincidenttaskdescription</internal_name>
+        <label_cache>[{"name":"5dced321-c663-43b3-9a8d-5d1234c40ab1.item.description","label":"3 - For Each➛Incident Task Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"incident_task","column_name":"description","usedInstances":{"7c7ac20e-3ae3-4524-87b9-0fa89f72baa0":["temp-0"]}},{"name":"flow_variable.temp","label":"Flow Variables➛temp","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"5a72f6a8-45ce-45b7-93da-896dc29cc70d":["description-0"],"4d9ef801-9cf8-4c51-9982-2f797d781066":["temp-0","temp_part-0"],"7c7ac20e-3ae3-4524-87b9-0fa89f72baa0":["temp-0"],"c4962d1f-e7a7-4630-8997-b76d99ad67f5":["description-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ad6f5b1a-04fb-4c33-8530-d0f8dba72bbb"}},{"name":"5bbd63c0-8016-4764-af6b-85c282500fca.Records","label":"2 - Look Up Records➛Incident Task Records","reference":"incident_task","reference_display":"Incident Task","type":"records","base_type":"records","usedInstances":{"5dced321-c663-43b3-9a8d-5d1234c40ab1":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.incident","label":"Input➛incident","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","column_name":"","usedInstances":{"5bbd63c0-8016-4764-af6b-85c282500fca":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4b503fbd-60a4-44c0-b81a-62d68f73852a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"5dced321-c663-43b3-9a8d-5d1234c40ab1.item.close_notes","label":"3 - For Each➛Incident Task Record➛Close notes","reference":"","reference_display":"Close notes","type":"string","base_type":"string","parent_table_name":"incident_task","column_name":"close_notes","usedInstances":{"4d9ef801-9cf8-4c51-9982-2f797d781066":["temp_part-0","description_part-0"]}},{"name":"flow_variable.temp_part","label":"Flow Variables➛temp_part","type":"string","base_type":"string","usedInstances":{"7c7ac20e-3ae3-4524-87b9-0fa89f72baa0":["temp-0"],"c4962d1f-e7a7-4630-8997-b76d99ad67f5":["description-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f6d95d04-0be8-498d-8695-aa36f1b999ca"}},{"name":"5dced321-c663-43b3-9a8d-5d1234c40ab1.item.number","label":"3 - For Each➛Incident Task Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"incident_task","column_name":"number","usedInstances":{"4d9ef801-9cf8-4c51-9982-2f797d781066":["description_part-0"]}},{"name":"flow_variable.description_full","label":"Flow Variables➛description_full","type":"string","base_type":"string","usedInstances":{"7f4a9e45-bfcb-4fa5-b444-99d7feb8e1bf":["description_full-0"],"c4962d1f-e7a7-4630-8997-b76d99ad67f5":["description-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c0d0e273-7c2c-4e33-856a-0b05d254b689"}},{"name":"flow_variable.description_part","label":"Flow Variables➛description_part","type":"string","base_type":"string","usedInstances":{"7f4a9e45-bfcb-4fa5-b444-99d7feb8e1bf":["description_full-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2eb187b8-fb90-478b-938b-4bf259c1e387"}}]</label_cache>
+        <master>true</master>
+        <name>Incident Tasks Summary</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Incident Tasks Summary">04540cdb3b08e210f50dda1c95e45ab1</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5e0bfd173b0c2610f50dda1c95e45a23</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:17:28</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=5e0bfd173b0c2610f50dda1c95e45a23"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5e0bfd173b0c2610f50dda1c95e45a23"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_5e0bfd173b0c2610f50dda1c95e45a23^id=5e0bfd173b0c2610f50dda1c95e45a23"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=5e0bfd173b0c2610f50dda1c95e45a23"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=5e0bfd173b0c2610f50dda1c95e45a23^sys_idNOT IN1a0bfd173b0c2610f50dda1c95e45a24"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>5e0bfd173b0c2610f50dda1c95e45a23</id>
+        <name>GetIncidentTaskDescription</name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:47</sys_created_on>
+        <sys_id>1a0bfd173b0c2610f50dda1c95e45a24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:07:47</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1a0bfd173b0c2610f50dda1c95e45a24"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=5e0bfd173b0c2610f50dda1c95e45a23^sys_idNOT IN1e0bfd173b0c2610f50dda1c95e45a25"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=4b503fbd-60a4-44c0-b81a-62d68f73852a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>incident</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>incident</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>incident</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Incident Tasks Summary">5e0bfd173b0c2610f50dda1c95e45a23</model>
+        <model_id>5e0bfd173b0c2610f50dda1c95e45a23</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_5e0bfd173b0c2610f50dda1c95e45a23</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Incident" name="incident">incident</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:47</sys_created_on>
+        <sys_id>1e0bfd173b0c2610f50dda1c95e45a25</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:07:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1e0bfd173b0c2610f50dda1c95e45a25"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=5e0bfd173b0c2610f50dda1c95e45a23^sys_idNOT IN1a0bfd173b0c2610f50dda1c95e45a37"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=58fc872a-40a2-46d2-bcbe-4089ff561b0c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>description</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Incident Tasks Summary">5e0bfd173b0c2610f50dda1c95e45a23</model>
+        <model_id>5e0bfd173b0c2610f50dda1c95e45a23</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_5e0bfd173b0c2610f50dda1c95e45a23</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:47</sys_created_on>
+        <sys_id>1a0bfd173b0c2610f50dda1c95e45a37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:07:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1a0bfd173b0c2610f50dda1c95e45a37"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5e0bfd173b0c2610f50dda1c95e45a23"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=5e0bfd173b0c2610f50dda1c95e45a23"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=5e0bfd173b0c2610f50dda1c95e45a23^sys_idNOT IN2a0bfd173b0c2610f50dda1c95e45a7c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Incident Tasks Summary">5e0bfd173b0c2610f50dda1c95e45a23</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:48</sys_created_on>
+        <sys_id>2a0bfd173b0c2610f50dda1c95e45a7c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:07:48</sys_updated_on>
+        <ui_id>5bbd63c0-8016-4764-af6b-85c282500fca</ui_id>
+        <values>H4sIAAAAAAAA/+WXTU/jMBCG/0qVc1QltBSW2wqEhMSHBIgLu7Ic22ktXCdrOy2l6n/fcWynURvYVioSaI+eGdvvjOdxnOdlxGl0Fp3mwyTB6fHpSZIMBkkyGg0ITrNsMCJZkg2zKI4knjKINDgTDIYzLCo75pJwyqRBBusXsFOuS4EXT9595d29R+cmEy6oYjI6e/4dRyVWsKphKjpbbrh2lSVwxgSEPnpdGzLNomyGqPY523V7Wu/WOQpFrZQkjtirYZIy0JBjoVkcTbGk2BRq0VgUw/ROirVhwqWBFSMb/Kr5G+x7mti4nEFWhDlfM0S+Us6cX2CDH4yqiKmUDyWTghOmXT0oy3ElzHnb5gLuSsML6aa4tN3sQlRTeevKETULhIMBS6VBBCttola5TyN/mBTz+6Dyksu6Jt4pCoJFM8LGKJ5VxupZRkywqW2EKS5LLseoVMWM15NBy7Q/FjDo56KYw6aaj2UfEyu8D3XF/UuwX9TmJ6y4zeIGloHJIIgL6BDkjlAXlapLOUNEVLp2KCy1WytaxZFe6HOBtV5nDiVHfyqr29XBZ4xc0ewUonhpfsISM+aTW8U7kXGcrFuOFJJyq0J34PGrgul0udRVZkvQD/bVapuZneYcEqQ6iwDSeTuNrtQ8Ulu2664FPFLpwZCCPL4TVLD512Nqf0pcCf6BCjn5sMmO1/2kC2WQq2WLFdCECPSAYdTuusXFln8/BnaQFxi4s13byxbvKfYI5JwJ2vVVubSOja/K0f/5VfmSAIAgitzpcSm4rJ8IIPSzyEg+vn5/bPRZ3V4tLqwNa7JNBO6Zove2Nwk7yAkkPMDevUenp0Ni+BbULbP5HQhGD8DgYAAMjg4DwLJJsylkR83Dq9CeZoh/s/F4Mx5asDUhXXUBttee6b57Hq22AR7sRXC72Zzn4p2eO/Dz8R0i48+8AiYw1e+HHL9ozumYmfXuIYoWZo7FS5ffdxwKB1Wn9wlP0eGH2I7SNaJAClJMw+G136IpPJ2275A0dub9rpAdtIRy3ODX3n0jplOhv0aAdDauz6Z9j1w1Vt/kwwM+Jr/slzQcVieD4cy+xR/c4UD4/Rd2C44XrxAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=5e0bfd173b0c2610f50dda1c95e45a23"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=5e0bfd173b0c2610f50dda1c95e45a23^sys_idNOT IN220bfd173b0c2610f50dda1c95e45a7b,620bfd173b0c2610f50dda1c95e45a5f,a20bfd173b0c2610f50dda1c95e45a7a,a60bfd173b0c2610f50dda1c95e45a60,ae0bfd173b0c2610f50dda1c95e45a5d"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8f08f9db3bc82610f50dda1c95e45a5e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Incident Tasks Summary">5e0bfd173b0c2610f50dda1c95e45a23</flow>
+        <flow_variables_assigned/>
+        <generation_source>flowRecommendation</generation_source>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned>description</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:48</sys_created_on>
+        <sys_id>220bfd173b0c2610f50dda1c95e45a7b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:17:28</sys_updated_on>
+        <ui_id>c4962d1f-e7a7-4630-8997-b76d99ad67f5</ui_id>
+        <values>H4sIAAAAAAAA/41U207bQBD9ldU+tTQYJyQ0CU8RFBWJFqmhvDRVtN5LsmW9a/YSSFH+vTO2c1FBVZ/sPZ7LOWdm/UJdilWK4c5NQtALS8c/XqgWdEzlSPXlqFucFvmwd9bN1SAXgnX5aCD7AyY47VDLSgmRQgbudRW1swCumEmIwqvQoTJsfb9H+FIb4SW2+dmhFfNQIUpPx9DUwotl5kbbh7eC/5eUYYU0r1i9STWuKwRD9Nou2vNNmz7dgs4LJNjtUPkcpRUSeChmguzQklnBovPrHeIlE7fW7IElyGrUlOw56N/Qb5jnOUYqCdp4a8zuOG9Na2B1ySIDKonH5HceOs1laFwRUrFk4sUh1gTcNirrlMgKs812JpX2a2MH3RU4mFEKQEJWKBW5t0LUdOmevm1ZXmlbu9J+NI4zszuxCN4VKSKfF5r03V82N8gro6WRJXScl6yqAJlX3q103QVIl9nCwCFTxj0BO1zVjHFUmMEIWHYF+GUN3zOvUe4XKAPJ2O671Y9JXuMCDYaKDz/22HE/Z73j/pnoHRe8kHAcjpQanHWLnNNNh4Z1uDAshL1RMKH5Y0KZjW2tQfPGY0ypN2sCpFaQAjOTWwxtONw8OP4rmJ4czezR0YTDRANBZSeTWipBqSQFcIfEpSRKzGvEFb8kjxmZ1gVImUIkXsLGWMJIfR8zghVvcZWJTWUBDx2IUyrISIo1+dAl2pJP3jtPPsNWG2wxlY3BNZkV0wZtJa7WEEi7pyRVQKzyQBVzZjSbUcIU3OUtPUyXz6ysjBwDG0/C0vkIw+JklvL8VGwDM9iExUL6jCcPWxazOnB+4Nw51mqV7aogeDKzM9t+2FarVwX6ZQcF5ioZg33Kd+/PCd1sNvhnsfgHbO7Oqt2e3fXiOkDeHWLXB3FiDX8UzQ+hJ+cfsOce2/wBZMbFjF8FAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a5f42d1b3b082610f50dda1c95e45a07</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Incident Tasks Summary">5e0bfd173b0c2610f50dda1c95e45a23</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:48</sys_created_on>
+        <sys_id>620bfd173b0c2610f50dda1c95e45a5f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:17:28</sys_updated_on>
+        <ui_id>5dced321-c663-43b3-9a8d-5d1234c40ab1</ui_id>
+        <values>H4sIAAAAAAAA/51TXW+jMBD8L34miI+ES/JWtapUqb1KadWXUxUttkmsMzZnm6Qc4r/fOnZo1cd7gh3vzs4MZiS6d13v7Ku+sVYcFNn+ek+IUB7D95EoaDnZEuF4a0lCTiB7X4/jqq5ZVdJssc7yarH8US0X0FT1Yr2ixbpYZVlDId1xqg2z04SjTNhOwvD2/wz0KCQzPIrswKA2xw3Zjt+OBMMF+YY1mzzb0LKoyiLLivUyr6uyzgtWAmcVEkqoucTWh+jum1k3dL40QUIEHuPMbkbx4UUUWUL4h+OKcVzfgLQ8IS0oBk6bgWyd6REwHNizksPccRTKIR3xvR9W/MWNeZb5xoajIcrD4VzuY44Bbu7AwQtSU9eb2EqPWlBuQxSMN9BLd/sVCw3PnRNahREHtbxOa9m36mdIgswE18+GSG9RBO+8US89+mhejvq8u6q8F+oSSjyUmoKcK3DOiLp3Xs9IuOQtEu1b6DqhDvvO6JO4DKOWNj1ILNJG6jMu9Vc0BeqFp5grpPeI313gNzDCu3hCGhyeEmIHeyvB2k8vGOL+T++VBGfRwz7E4EeoEZ27wQUnHuVO7/7WB+45UyosSnj12MP1X/EHA94gQb9CZ21+e/Gf2PQPEfL4D3UDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1e9a7dd33b0c2610f50dda1c95e45a37</block>
+        <comment>Full Description</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Incident Tasks Summary">5e0bfd173b0c2610f50dda1c95e45a23</flow>
+        <flow_variables_assigned>description_full</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>5dced321-c663-43b3-9a8d-5d1234c40ab1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:48</sys_created_on>
+        <sys_id>a20bfd173b0c2610f50dda1c95e45a7a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:17:28</sys_updated_on>
+        <ui_id>7f4a9e45-bfcb-4fa5-b444-99d7feb8e1bf</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9LzonhhvHaZJb0aJAgW0F1qyXrTBoiU6EyZJrSUkzw/99lO0kRfZx2mVAbtYjRb33SMINM95V3tmVubFWrjVbfn0ZMakDRt8Nk4ItGRsxDSXSl0DLa1k5aXRWeKUosgXlQ6hpCmV22RZqCbnC6Dy1bb/pv+VUULu2pYJC2krB/vlf1+UbqUSNg0aCSZLDmi2bs1CneTpZQCJEkuQxn8yu4iKNhYArvkhxmsIcqKCCHNXvTfmzXW5fhYh1tdTr4fxhKPR0AE0tArF4xPDNoRZIjApQFkesBC3AmXp/RGoE8ajVCdhI7fqulfBm5Q96bx7HccgskFRy7KPHYzZY3sPFHTggKp47Xw+pfGMkR9v7I7AAr9zte6xPeOyk9ldc6MRw2yhf6k+9J+xY4NBhQrwlElgFqYH7IKR42pjd5wPLe6k7V4agMhzU8QSOvMu9C3wa5uXqzOYe+cVoVFjSi1kJVUVIVtVmK7tXiHQZrRUdom62qJW0HxHwoDCiFkB0T/hdBz8Pg/eRytDl8NwXLV89PoRR4rGIcXKdjK/5hI+nmCTjeTqDcZzHqZik03w2X7B2xOze3iqw9mQUdSh79UFmb9tgUNZ7HK5043VDpLY4eNG+hJ3s+Vx2+LLDlx3+P3dYIJeWeK4CqYfDHzkE9jSZkr+Hdqb+HhSesPYnYpCGydsHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3487b59b3bc82610f50dda1c95e45ab9</block>
+        <comment>Part description</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Incident Tasks Summary">5e0bfd173b0c2610f50dda1c95e45a23</flow>
+        <flow_variables_assigned>description_part</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>5dced321-c663-43b3-9a8d-5d1234c40ab1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:48</sys_created_on>
+        <sys_id>a60bfd173b0c2610f50dda1c95e45a60</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:17:28</sys_updated_on>
+        <ui_id>4d9ef801-9cf8-4c51-9982-2f797d781066</ui_id>
+        <values>H4sIAAAAAAAA/+1WTW/bMAz9K4POsWHHTurkVrQoUGBbgbXbZSgMWqIbYbLk6qNtFvi/j4qdtOi2w0675GJIj6L4+EgR3jETfB+8uzPnzskHzdbf72dM6ojResekYGvGZkxDh7QS6LiVvZdG1z1YT5YnUCGadruF4CiKeZ7w5bJIyqIpkhVUIlmIfF6UvMygyVPpsUt16Bq0w7D+8C9eXBmHtTYe3TBQZCFdr2D77b8R4BuphMVJNdKDRPJo2Xr3zrRXsVyuoBCiKJqMz5d51i4yISDnqwWWC6iQLlTQoPqzzH8vgN/20eK8lfph2n+cLro9gMaKSCybMXzxqAUSoxaUwxnrQAvwxm6PiEUQN1q9Ahup/dgHHbw4+ZPiVVmWxZMtUpYcR+txW0+1GeH2EjwQlcB9sNNRvjGSoxv1EdhCUP7iLTYeuNmnOrp4aNTB26jQ6c+jJux4waEVCAlUKYF9TDVynxJpbzfm+cuB5ZXUe1UmozIc1HEHnrRrgo98dizIu3cyj8hvQqPCjiLWHfQ9IXVvzZPcRyHSXfqgaJO2yjwTu/jiUuAxw5RKAOkV4Zd7+BtYGdP9RNeQcwz3VcvHgNexlebY5NVZUyVts8qS8qxqklVBn7Jp54sVz7GoztgwY27rLhQ49yoUVah+DDHNUbZJoHrUOLrs2+ucSD3hpMVwH1/5yOc0FU5T4TQVTlNhnAoCuXTE8y6Suj78NUTDljpT8rfQs7E/Yoav2PALLeAhUX8IAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7087b59b3bc82610f50dda1c95e45ab4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Incident Tasks Summary">5e0bfd173b0c2610f50dda1c95e45a23</flow>
+        <flow_variables_assigned>description_full</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:48</sys_created_on>
+        <sys_id>ae0bfd173b0c2610f50dda1c95e45a5d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:17:28</sys_updated_on>
+        <ui_id>65778db0-dc5a-4586-b1aa-c13f6f289c3f</ui_id>
+        <values>H4sIAAAAAAAA/+1V227bMAz9Fz0ngRvHadK3okWBAtsKrFlfhsKgJToRJkuuLkmzIP8+ynIuaDdgH5A381AkzzkS4R0zwbfBu4W5dU4uNbv5+TpgUkeMvndMCnbD2IBpaJC+BDpuZeul0WUdlKLMGlTAdEhI1yrYvpwQvpJKWOz7tmCpjUfLbnYfUt2cyXgOuRB5XmV8PL3K6iITAq74vMBJATOghgoqVH8n8m+KftvGjPNW6mUff+kbPR9AY0Uklg0YvnvUAolRDcrhgDWgBXhjt0fEIognrU7ASmqfJDfw7uRvmjfLsiyerJFU8t6QY1j2ZiW4vgcPRCVwH+zROyM5uuSPwBqC8nfnWDrw1ElNJR4qdag2KjT6W/KEHRuc3U1wRALbKDVy74XUzyuz+X5g+SB150qfVIaDOkbgybsq+Mhnx4JcfLA5IZ+MRoUNTSwbaFtCytaateymEOlmtFQUjGplNsQuvskR8KhwRFcAowfC7zv4BayMcr9SGyqO435o+RbwMT4lnokMx9f58JqP+XCCeT6cFVMYZlVWiHExqaazOdsPmNu6OwXOnYyiGyrfQpSZbOsNKpPHsaR7XrdEao29F/vXuAeJz2VvLntz2Zv/3xuBXDriuYikHg9/npjY0suU/BzaGPsrKjxh+z8KL09BwwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=5e0bfd173b0c2610f50dda1c95e45a23"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=5e0bfd173b0c2610f50dda1c95e45a23^sys_idNOT IN520bfd173b0c2610f50dda1c95e45a47,9a0bfd173b0c2610f50dda1c95e45a57"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c0d0e273-7c2c-4e33-856a-0b05d254b689</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>description_full</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>description_full</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Incident Tasks Summary">5e0bfd173b0c2610f50dda1c95e45a23</model>
+        <model_id>5e0bfd173b0c2610f50dda1c95e45a23</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_5e0bfd173b0c2610f50dda1c95e45a23</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:48</sys_created_on>
+        <sys_id>520bfd173b0c2610f50dda1c95e45a47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:07:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2eb187b8-fb90-478b-938b-4bf259c1e387</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>description_part</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>description_part</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Incident Tasks Summary">5e0bfd173b0c2610f50dda1c95e45a23</model>
+        <model_id>5e0bfd173b0c2610f50dda1c95e45a23</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_5e0bfd173b0c2610f50dda1c95e45a23</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:48</sys_created_on>
+        <sys_id>9a0bfd173b0c2610f50dda1c95e45a57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:07:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>incident</element>
+        <help/>
+        <hint/>
+        <label>incident</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5e0bfd173b0c2610f50dda1c95e45a23</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:47</sys_created_on>
+        <sys_id>d60bfd173b0c2610f50dda1c95e45a32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:07:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5e0bfd173b0c2610f50dda1c95e45a23"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>description</element>
+        <help/>
+        <hint/>
+        <label>description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_5e0bfd173b0c2610f50dda1c95e45a23</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:47</sys_created_on>
+        <sys_id>da0bfd173b0c2610f50dda1c95e45a3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:07:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5e0bfd173b0c2610f50dda1c95e45a23"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>04540cdb3b08e210f50dda1c95e45ab1</sys_id>
+        <latest_snapshot>5e0bfd173b0c2610f50dda1c95e45a23</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch1-02-21-2025_03-05-2025_2133.zip</compiler_build>
+    </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=04540cdb3b08e210f50dda1c95e45ab1"/>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=04540cdb3b08e210f50dda1c95e45ab1"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=04540cdb3b08e210f50dda1c95e45ab1^sys_idNOT INae0bfd173b0c2610f50dda1c95e45a88"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"ae0bfd173b0c2610f50dda1c95e45a88","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Incident Tasks Summary">04540cdb3b08e210f50dda1c95e45ab1</plan_id>
+        <snapshot>cfbef1df3b0c2610f50dda1c95e45a2b</snapshot>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 08:07:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ae0bfd173b0c2610f50dda1c95e45a88</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 08:17:29</sys_updated_on>
+    </sys_flow_subflow_plan>
 </record_update>

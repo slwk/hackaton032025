@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_definition_attribute">
+    <sys_one_extend_definition_attribute action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <apply_filter>false</apply_filter>
+        <attribute_label/>
+        <capability display_value="Incident Task Summary">82a47d133bc82610f50dda1c95e45a49</capability>
+        <choice_list/>
+        <contains_large_input>false</contains_large_input>
+        <data_type>glide_record</data_type>
+        <default_value/>
+        <definition/>
+        <description/>
+        <group/>
+        <hidden>false</hidden>
+        <info/>
+        <label>Incident Task</label>
+        <mandatory>true</mandatory>
+        <name>incident_task</name>
+        <order>100</order>
+        <schema>{"tableName":"incident_task","sysId":"264c615f3b482610f50dda1c95e45ae8"}</schema>
+        <sys_class_name>sys_one_extend_definition_attribute</sys_class_name>
+        <sys_created_by>marcin.kurpiewski@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 07:42:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>183539d33bc82610f50dda1c95e45a46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>incident_task</sys_name>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sys_one_extend_definition_attribute_183539d33bc82610f50dda1c95e45a46</sys_update_name>
+        <sys_updated_by>marcin.kurpiewski@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 07:42:15</sys_updated_on>
+        <translate>false</translate>
+        <truncate>true</truncate>
+        <type>input</type>
+        <user_query>false</user_query>
+    </sys_one_extend_definition_attribute>
+    <sys_translated_text action="delete_multiple" query="documentkey=183539d33bc82610f50dda1c95e45a46"/>
+</record_update>
