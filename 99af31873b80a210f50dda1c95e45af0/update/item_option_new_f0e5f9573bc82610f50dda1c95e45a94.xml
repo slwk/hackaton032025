@@ -30,7 +30,7 @@
         <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
-        <list_table>cmdb_ci</list_table>
+        <list_table/>
         <lookup_label/>
         <lookup_price/>
         <lookup_table/>
@@ -38,18 +38,18 @@
         <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>stolen_device</name>
+        <name>final_confirmation</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>30</order>
+        <order>40</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Stolen Device</question_text>
+        <question_text>By submitting this ticket, I'm fully aware that it will lead to locking stolen device and affected user account</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -57,8 +57,8 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table>incident</record_producer_table>
-        <reference>cmdb_ci</reference>
-        <reference_qual>javascript: 'operational_status!=2^sys_class_name=cmdb_ci_computer^ORsys_class_name=cmdb_ci_handheld_computing^ORsys_class_name=cmdb_ci_comm^assigned_to=' + current.variables.u_caller_on_behalf_of_id</reference_qual>
+        <reference/>
+        <reference_qual/>
         <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
@@ -77,24 +77,24 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>Kamil.Augustyniak@fujitsu.com</sys_created_by>
-        <sys_created_on>2025-03-07 18:41:22</sys_created_on>
-        <sys_id>e42143433b4ca210f50dda1c95e45a7c</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Stolen Device</sys_name>
+        <sys_created_on>2025-03-08 07:47:09</sys_created_on>
+        <sys_id>f0e5f9573bc82610f50dda1c95e45a94</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>By submitting this ticket, I'm fully aware that it will lead to locking stolen device and affected user account</sys_name>
         <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
-        <sys_update_name>item_option_new_e42143433b4ca210f50dda1c95e45a7c</sys_update_name>
+        <sys_update_name>item_option_new_f0e5f9573bc82610f50dda1c95e45a94</sys_update_name>
         <sys_updated_by>Kamil.Augustyniak@fujitsu.com</sys_updated_by>
-        <sys_updated_on>2025-03-08 10:01:07</sys_updated_on>
+        <sys_updated_on>2025-03-08 08:14:27</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
-        <type>8</type>
+        <type>7</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>advanced</use_reference_qualifier>
+        <use_reference_qualifier>simple</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>
@@ -106,22 +106,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=e42143433b4ca210f50dda1c95e45a7c"/>
-    <fx_price action="delete_multiple" query="id=e42143433b4ca210f50dda1c95e45a7c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=f0e5f9573bc82610f50dda1c95e45a94"/>
+    <fx_price action="delete_multiple" query="id=f0e5f9573bc82610f50dda1c95e45a94"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>e42143433b4ca210f50dda1c95e45a7c</id>
+        <id>f0e5f9573bc82610f50dda1c95e45a94</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>Kamil.Augustyniak@fujitsu.com</sys_created_by>
-        <sys_created_on>2025-03-07 18:41:23</sys_created_on>
-        <sys_id>e57203073b4ca210f50dda1c95e45a30</sys_id>
+        <sys_created_on>2025-03-08 07:47:09</sys_created_on>
+        <sys_id>4c56b1d73bc82610f50dda1c95e45a0b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Kamil.Augustyniak@fujitsu.com</sys_updated_by>
-        <sys_updated_on>2025-03-07 18:41:23</sys_updated_on>
+        <sys_updated_on>2025-03-08 07:47:09</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -129,16 +129,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>e42143433b4ca210f50dda1c95e45a7c</id>
+        <id>f0e5f9573bc82610f50dda1c95e45a94</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>Kamil.Augustyniak@fujitsu.com</sys_created_by>
-        <sys_created_on>2025-03-07 18:41:23</sys_created_on>
-        <sys_id>ad7203073b4ca210f50dda1c95e45a2f</sys_id>
+        <sys_created_on>2025-03-08 07:47:09</sys_created_on>
+        <sys_id>c456b1d73bc82610f50dda1c95e45a0a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Kamil.Augustyniak@fujitsu.com</sys_updated_by>
-        <sys_updated_on>2025-03-07 18:41:23</sys_updated_on>
+        <sys_updated_on>2025-03-08 07:47:09</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
