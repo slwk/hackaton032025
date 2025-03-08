@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_context_profile_skill">
+    <sys_cs_context_profile_skill action="DELETE">
+        <context_profile display_value="Now Assist for CSP">9b3d48079340da50836bb79c5cba10f8</context_profile>
+        <skill_id display_value="Lost / Stolen Device">0e89dc5f3b0ce210f50dda1c95e45ab6</skill_id>
+        <sys_class_name>sys_cs_context_profile_skill</sys_class_name>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 01:01:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1689109f3b0ce210f50dda1c95e45a1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sys_cs_context_profile_skill_1689109f3b0ce210f50dda1c95e45a1c</sys_update_name>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:01:48</sys_updated_on>
+    </sys_cs_context_profile_skill>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</application>
+        <file_path/>
+        <instance_id>83a9bffb93311650c4e8ddd548373c69</instance_id>
+        <instance_name>democustomerwf91576</instance_name>
+        <name>sys_cs_context_profile_skill_1689109f3b0ce210f50dda1c95e45a1c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_context_profile_skill"><sys_cs_context_profile_skill action="INSERT_OR_UPDATE"><context_profile display_value="Now Assist for CSP">9b3d48079340da50836bb79c5cba10f8</context_profile><skill_id display_value="Lost / Stolen Device">0e89dc5f3b0ce210f50dda1c95e45ab6</skill_id><sys_class_name>sys_cs_context_profile_skill</sys_class_name><sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by><sys_created_on>2025-03-08 01:01:48</sys_created_on><sys_domain>global</sys_domain><sys_id>1689109f3b0ce210f50dda1c95e45a1c</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package><sys_policy/><sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope><sys_update_name>sys_cs_context_profile_skill_1689109f3b0ce210f50dda1c95e45a1c</sys_update_name><sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by><sys_updated_on>2025-03-08 01:01:48</sys_updated_on></sys_cs_context_profile_skill></record_update>]]></payload>
+        <payload_hash>-1376318030</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>f89346033bc0a210f50dda1c95e45a5a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 01:01:48</sys_created_on>
+        <sys_id>1a89109f3b0ce210f50dda1c95e45a1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1957345cabc0000001</sys_recorded_at>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:01:48</sys_updated_on>
+        <type>Profile and Skill Mapping</type>
+        <update_guid>da89109fb40ce210d4e7fcdd7661401d</update_guid>
+        <update_guid_history>da89109fb40ce210d4e7fcdd7661401d:-1376318030</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 01:15:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_context_profile_skill">sys_cs_context_profile_skill</sys_db_object>
+        <sys_id>b1cc3900cb0642458c8d8a91ae0cf929</sys_id>
+        <sys_metadata>1689109f3b0ce210f50dda1c95e45a1c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_scope_delete display_value="">26608f88a1b8430caa47f1bf87b021a1</sys_scope_delete>
+        <sys_update_name>sys_cs_context_profile_skill_1689109f3b0ce210f50dda1c95e45a1c</sys_update_name>
+        <sys_update_version display_value="sys_cs_context_profile_skill_1689109f3b0ce210f50dda1c95e45a1c">1a89109f3b0ce210f50dda1c95e45a1e</sys_update_version>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:15:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

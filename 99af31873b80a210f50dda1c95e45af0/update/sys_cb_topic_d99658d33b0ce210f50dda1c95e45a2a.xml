@@ -1,0 +1,1648 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description>Reporting a lost or stolen device</description>
+        <dialog_acts_enabled>true</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.74",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "c6845791c3d44328920e5950dd980f06": {
+          "id": "c6845791c3d44328920e5950dd980f06",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "0a70e783324e4a6d82728dd361d60214": {
+          "id": "0a70e783324e4a6d82728dd361d60214",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "a9f4b108a6e542869c3018817d30c9d6": {
+          "id": "a9f4b108a6e542869c3018817d30c9d6",
+          "stepType": "StandaloneAIReferenceChoicePrompt",
+          "name": "Prodigy",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "50ba98c7306746949fe5aadf621643cf",
+              "displayName": "Prodigy",
+              "name": "prodigy",
+              "description": "Please select user who's device has been lost / stolen\nAdditional instructions:\nFor this input the data should be extracted from the user input if it has a value from this list of words: @device,device",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "reference",
+              "variableId": "2b496a471bad4e488b67fe6bea901231",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "glide_record",
+              "script": "",
+              "condition": {
+                "mode": "glide_query",
+                "value": "manager={{vaInputs.user}}^ORsys_id={{vaInputs.user}}"
+              },
+              "stepType": "ReferenceChoicePrompt",
+              "enforcePrompt": true,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Please select user who's device has been lost / stolen"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "bbc954017e63403a802125c1fa471df5"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_a9f4b108a6e542869c3018817d30c9d6_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "2b496a471bad4e488b67fe6bea901231"
+          ]
+        },
+        "bee5e0d7385c486180e1cb432f127e9c": {
+          "id": "bee5e0d7385c486180e1cb432f127e9c",
+          "stepType": "StandaloneAIReferenceChoicePrompt",
+          "name": "Device",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "624238263f994ddf94dcb45afd6caf3d",
+              "displayName": "Device",
+              "name": "device",
+              "description": "Please select device-s that have been stolen",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "reference",
+              "variableId": "4c7697b8fec64d20ac7f41c1e3ba09f6",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "glide_record",
+              "script": "",
+              "condition": {
+                "mode": "glide_query",
+                "value": "assigned_to={{vaInputs.prodigy}}"
+              },
+              "stepType": "ReferenceChoicePrompt",
+              "enforcePrompt": true,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Please select device-s that have been stolen"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "b430abd3f1ac406a82baa3f919e65635"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_bee5e0d7385c486180e1cb432f127e9c_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "4c7697b8fec64d20ac7f41c1e3ba09f6"
+          ]
+        },
+        "2605faa7c0bc49b6bf5cfee87d8d6748": {
+          "id": "2605faa7c0bc49b6bf5cfee87d8d6748",
+          "stepType": "CrudAction",
+          "name": "Create incident",
+          "template": {
+            "query": {
+              "terms": [
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "caller_id",
+                  "expression": "{{vaInputs.user}}",
+                  "id": "b67d039ba42f42919ebcd2b0c12f812b"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "u_caller_on_behalf_of_id",
+                  "expression": "{{vaInputs.prodigy}}",
+                  "id": "e678cc27f90c439898a81602fe901550"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "cmdb_ci",
+                  "expression": "{{vaInputs.device}}",
+                  "id": "840e9afe9f5747ac9342a68791c153b8"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "category",
+                  "expression": "hardware",
+                  "id": "1e7ce76ad84d4ec68bf7b8732a907434"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "subcategory",
+                  "expression": "lost_stolen_device",
+                  "id": "11d193f2db7f4f35bdcb51ebd91f4630"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "short_description",
+                  "expression": "[Lost/Stolen Device]",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "[Lost/Stolen Device]"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "e90eabdc621c466ba2fb5e8563f6fb31"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "description",
+                  "expression": "Temporary / current contact number: {{vaInputs.contact}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "Temporary / current contact number: "
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.contact}}",
+                            "displayValue": "Input Variables➛Contact"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "c1d57a929d434185b8ba2d74a157543f"
+                }
+              ]
+            },
+            "queryString": "caller_id={{vaInputs.user}}^u_caller_on_behalf_of_id={{vaInputs.prodigy}}^cmdb_ci={{vaInputs.device}}^category=hardware^subcategory=lost_stolen_device^short_description=[Lost/Stolen Device]^description=Temporary / current contact number: {{vaInputs.contact}}"
+          },
+          "mode": "create",
+          "record": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "attachments": [
+            {
+              "value": "",
+              "mode": "simple"
+            }
+          ],
+          "variableId": "58e5b2777521450894ed568c30ba78e0"
+        },
+        "4f634bf907bf4fd7bdc529d5c20389a2": {
+          "id": "4f634bf907bf4fd7bdc529d5c20389a2",
+          "stepType": "StandaloneAIBooleanPrompt",
+          "name": "Device 2 Boolean",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "a53866f5839743f98e88eb0bb5944269",
+              "displayName": "Device 2 Boolean",
+              "name": "device_2_boolean",
+              "description": "Do you want to report another device?",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "boolean",
+              "variableId": "6fc942419b294253bf627f668b94cdfb",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "BooleanPrompt",
+              "enforcePrompt": true,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Do you want to report another device?"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "96b9bd3da14246aab4970e4a9c1684e4"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_4f634bf907bf4fd7bdc529d5c20389a2_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "6fc942419b294253bf627f668b94cdfb"
+          ]
+        },
+        "ca1f785224314ae8819942af523544f0": {
+          "id": "ca1f785224314ae8819942af523544f0",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "57575b062fc9414286217d65b51914ec": {
+          "id": "57575b062fc9414286217d65b51914ec",
+          "stepType": "StandaloneAIReferenceChoicePrompt",
+          "name": "Device 2",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "a5d830762ff34952b3547b17a57669e6",
+              "displayName": "Device 2",
+              "name": "device_2",
+              "description": "Please select another device",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "reference",
+              "variableId": "63483bb195784facaaeb8a7a56201b04",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "glide_record",
+              "script": "",
+              "condition": {
+                "mode": "glide_query",
+                "value": "assigned_to={{vaInputs.prodigy}}^sys_id!={{vaInputs.device}}"
+              },
+              "stepType": "ReferenceChoicePrompt",
+              "enforcePrompt": true,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Please select another device"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "a8292f84d31e4b6095df81437ec9c28d"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_57575b062fc9414286217d65b51914ec_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "63483bb195784facaaeb8a7a56201b04"
+          ]
+        },
+        "25e1b02b0093456994a32b306b7962d4": {
+          "id": "25e1b02b0093456994a32b306b7962d4",
+          "stepType": "RecordOutput",
+          "name": "Created Incidents",
+          "variableId": "58e5b2777521450894ed568c30ba78e0",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "script",
+          "tableName": "incident",
+          "fields": [
+            "number",
+            "caller_id",
+            "cmdb_ci"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "sys_created_by={{vaInputs.user}}^sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^u_caller_on_behalf_of_id={{vaInputs.prodigy}}"
+          }
+        },
+        "463ce865122d40b29e9a7bb7205521f8": {
+          "id": "463ce865122d40b29e9a7bb7205521f8",
+          "stepType": "StandaloneAIBooleanPrompt",
+          "name": "Contact",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "68ce9c311002467a9d2b6434f58f4e62",
+              "displayName": "Contact",
+              "name": "contact_2",
+              "description": "Do you want to provide any alternative contact details (phone number)?",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "boolean",
+              "variableId": "2836c309f2af459ca72ac03840445ee2",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "BooleanPrompt",
+              "enforcePrompt": true,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Do you want to provide any alternative contact details (phone number)?"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "78d0ed0c05b7485ca8cd09a42c74854b"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_463ce865122d40b29e9a7bb7205521f8_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "2836c309f2af459ca72ac03840445ee2"
+          ]
+        },
+        "6d2183a5fc754e41a9f62343ed24cafb": {
+          "id": "6d2183a5fc754e41a9f62343ed24cafb",
+          "stepType": "TextOutput",
+          "name": "Ending",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Incidents have been created on behalf of "
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.prodigy.name}}",
+                        "displayValue": "Input Variables➛Prodigy➛Name"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ". "
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "All the provided devices will be blocked."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Our agents will contact affected user for further support."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "b69da248830a4e8dabbca3cf2c4d38fb"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "89d9ebf3e08c431a8635d08700506414": {
+          "id": "89d9ebf3e08c431a8635d08700506414",
+          "stepType": "StandaloneAITextPrompt",
+          "name": "Contact",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "aa5abcd8674d474788f34722c0be09aa",
+              "displayName": "Contact",
+              "name": "contact",
+              "description": "please provide phone number",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "string",
+              "variableId": "ffc4ffdd05ec49af94d15566aac69731",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "TextPrompt",
+              "enforcePrompt": true,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "please provide phone number"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "61a9b8c35b5600101f254d3ba881c7fb",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "2356cfae4be048d7a48229414c244c17"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_89d9ebf3e08c431a8635d08700506414_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "ffc4ffdd05ec49af94d15566aac69731"
+          ]
+        },
+        "fbf29c7132d64b8d8c2c01a436cd7f29": {
+          "id": "fbf29c7132d64b8d8c2c01a436cd7f29",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "4218e06910d8486cbafb3c1006767dba": {
+          "id": "4218e06910d8486cbafb3c1006767dba",
+          "stepType": "RecordOutput",
+          "name": "Incdent card 1",
+          "variableId": "58e5b2777521450894ed568c30ba78e0",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "variable",
+          "tableName": "incident",
+          "fields": [
+            "number",
+            "caller_id",
+            "u_caller_on_behalf_of_id",
+            "cmdb_ci",
+            "subcategory",
+            "short_description"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": ""
+          }
+        },
+        "760f24fec65e48609c4d92762d0f6821": {
+          "id": "760f24fec65e48609c4d92762d0f6821",
+          "stepType": "CrudAction",
+          "name": "Create Incident 2",
+          "template": {
+            "query": {
+              "terms": [
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "caller_id",
+                  "expression": "{{vaInputs.user}}",
+                  "id": "279e183be3844230a324b98e902e23f7"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "u_caller_on_behalf_of_id",
+                  "expression": "{{vaInputs.prodigy}}",
+                  "id": "05cbd077f8b64d4a804ca963892df0f8"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "cmdb_ci",
+                  "expression": "{{vaInputs.device_2_2}}",
+                  "id": "a3c45501c8fd4e7eb253e8821b793ea1"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "category",
+                  "expression": "hardware",
+                  "id": "bd23dbfc586743bca4462ac2e878c505"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "subcategory",
+                  "expression": "lost_stolen_device",
+                  "id": "90f93da0ba314a2aa4bc44447f588066"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "short_description",
+                  "expression": "[Lost/Stolen Device]",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "[Lost/Stolen Device]"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "b65b91b1ff144cf78a4dc7ce90e247d2"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "description",
+                  "expression": "Temporary / current contact number: {{vaInputs.contact}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "Temporary / current contact number: "
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.contact}}",
+                            "displayValue": "Input Variables➛Contact"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "64be18708a12473a92d2969021833b5f"
+                }
+              ]
+            },
+            "queryString": "caller_id={{vaInputs.user}}^u_caller_on_behalf_of_id={{vaInputs.prodigy}}^cmdb_ci={{vaInputs.device_2_2}}^category=hardware^subcategory=lost_stolen_device^short_description=[Lost/Stolen Device]^description=Temporary / current contact number: {{vaInputs.contact}}"
+          },
+          "mode": "create",
+          "record": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "attachments": [
+            {
+              "value": "",
+              "mode": "simple"
+            }
+          ],
+          "variableId": "446f683c66514f51ae4469915f934a19"
+        },
+        "556d5239ace3442e8d9d54ee24714372": {
+          "id": "556d5239ace3442e8d9d54ee24714372",
+          "stepType": "RecordOutput",
+          "name": "Incident card 2",
+          "variableId": "446f683c66514f51ae4469915f934a19",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "variable",
+          "tableName": "incident",
+          "fields": [
+            "number",
+            "caller_id",
+            "u_caller_on_behalf_of_id",
+            "cmdb_ci",
+            "subcategory",
+            "short_description"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": ""
+          }
+        },
+        "d82b604fa5f84442809f66722ce3067a": {
+          "id": "d82b604fa5f84442809f66722ce3067a",
+          "stepType": "StandaloneAIBooleanPrompt",
+          "name": "Intro",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "ee2a855521b740979cfe59ddc5584437",
+              "displayName": "Intro",
+              "name": "intro",
+              "description": "You are about to create a Lost/Stolen Incident. \n\nPlease be aware that you can only create it for yourself or your subordinate. If you need to create it for a colleague, please ask their manager to do so.\n\nDo you want to continue?",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "boolean",
+              "variableId": "2ac7025a47ad44ca9086538abddfd6fc",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "BooleanPrompt",
+              "enforcePrompt": true,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "You are about to create a Lost/Stolen Incident. "
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Please be aware that you can only create it for yourself or your subordinate. If you need to create it for a colleague, please ask their manager to do so."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Do you want to continue?"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "850eb7e007444a7fb7471cfd43bb99ba"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_d82b604fa5f84442809f66722ce3067a_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "2ac7025a47ad44ca9086538abddfd6fc"
+          ]
+        },
+        "62a7da2808474194b599143a6fb25938": {
+          "id": "62a7da2808474194b599143a6fb25938",
+          "stepType": "Decision",
+          "name": "Decision"
+        }
+      },
+      "edges": [
+        {
+          "id": "051f5ddf01574a59860d34cfc26cd6da",
+          "edgeType": "Edge",
+          "source": "c6845791c3d44328920e5950dd980f06",
+          "target": "d82b604fa5f84442809f66722ce3067a",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e210a55a038f42f3a4144bee120fa3fb",
+          "edgeType": "Branch",
+          "source": "62a7da2808474194b599143a6fb25938",
+          "target": "a9f4b108a6e542869c3018817d30c9d6",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.intro=true",
+            "mode": "query"
+          },
+          "label": "true"
+        },
+        {
+          "id": "8e2e559d2fa948439a5ca48906f2277b",
+          "edgeType": "Branch",
+          "source": "62a7da2808474194b599143a6fb25938",
+          "target": "0a70e783324e4a6d82728dd361d60214",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.intro=false",
+            "mode": "query"
+          },
+          "label": "false"
+        },
+        {
+          "id": "75bb17b4e1ef42f4b7bb0651663d2db4",
+          "edgeType": "Edge",
+          "source": "25e1b02b0093456994a32b306b7962d4",
+          "target": "0a70e783324e4a6d82728dd361d60214",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cd980854dc1840a790e5b0f0a63a5f68",
+          "edgeType": "Edge",
+          "source": "4f634bf907bf4fd7bdc529d5c20389a2",
+          "target": "ca1f785224314ae8819942af523544f0",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "545a45bcfb0748d49d3145da06ec81f1",
+          "edgeType": "Edge",
+          "source": "bee5e0d7385c486180e1cb432f127e9c",
+          "target": "2605faa7c0bc49b6bf5cfee87d8d6748",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "2b2404f9666443779ad3deed6fa95371",
+          "edgeType": "Branch",
+          "source": "ca1f785224314ae8819942af523544f0",
+          "target": "463ce865122d40b29e9a7bb7205521f8",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.device_2_boolean=false",
+            "mode": "query"
+          },
+          "label": "false"
+        },
+        {
+          "id": "37fb475f18f44a7f886019bae6d3cf8e",
+          "edgeType": "Edge",
+          "source": "57575b062fc9414286217d65b51914ec",
+          "target": "760f24fec65e48609c4d92762d0f6821",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d7a0c3ee657b43eca50ac8a75149cf77",
+          "edgeType": "Edge",
+          "source": "a9f4b108a6e542869c3018817d30c9d6",
+          "target": "bee5e0d7385c486180e1cb432f127e9c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "a322ba807260436caac7ba86910783ec",
+          "edgeType": "Branch",
+          "source": "ca1f785224314ae8819942af523544f0",
+          "target": "57575b062fc9414286217d65b51914ec",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.device_2_boolean=true",
+            "mode": "query"
+          },
+          "label": "true"
+        },
+        {
+          "id": "c5ed357484e34361a5ad24009278d274",
+          "edgeType": "Edge",
+          "source": "6d2183a5fc754e41a9f62343ed24cafb",
+          "target": "25e1b02b0093456994a32b306b7962d4",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "28359ce6b39641958f27fdad112bb8b0",
+          "edgeType": "Edge",
+          "source": "89d9ebf3e08c431a8635d08700506414",
+          "target": "6d2183a5fc754e41a9f62343ed24cafb",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "442a25d4ada4499aba541aca3f79d2c6",
+          "edgeType": "Branch",
+          "source": "fbf29c7132d64b8d8c2c01a436cd7f29",
+          "target": "89d9ebf3e08c431a8635d08700506414",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.contact_2=true",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "df2a1acdc6294e2484532d12abf081ae",
+          "edgeType": "Branch",
+          "source": "fbf29c7132d64b8d8c2c01a436cd7f29",
+          "target": "6d2183a5fc754e41a9f62343ed24cafb",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.contact_2!=true",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "8ac61bd4d53740909cfbdeb705f3ebb6",
+          "edgeType": "Edge",
+          "source": "2605faa7c0bc49b6bf5cfee87d8d6748",
+          "target": "4218e06910d8486cbafb3c1006767dba",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ddde105f82944fcf81604484773f2992",
+          "edgeType": "Edge",
+          "source": "4218e06910d8486cbafb3c1006767dba",
+          "target": "4f634bf907bf4fd7bdc529d5c20389a2",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3bb7613be4204fb1b11b2bb542e1c31a",
+          "edgeType": "Edge",
+          "source": "463ce865122d40b29e9a7bb7205521f8",
+          "target": "fbf29c7132d64b8d8c2c01a436cd7f29",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "039ed2978b6c4c7d903aa55374fbb5aa",
+          "edgeType": "Edge",
+          "source": "760f24fec65e48609c4d92762d0f6821",
+          "target": "556d5239ace3442e8d9d54ee24714372",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "952d5a115fde4b3fafe2ccea4995cd15",
+          "edgeType": "Edge",
+          "source": "556d5239ace3442e8d9d54ee24714372",
+          "target": "463ce865122d40b29e9a7bb7205521f8",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "6cfe9e2ce3af4447a5b9a2e0341e1e01",
+          "edgeType": "Edge",
+          "source": "d82b604fa5f84442809f66722ce3067a",
+          "target": "62a7da2808474194b599143a6fb25938",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "19d84300953d47a1b2f99f1a9f7118e6": {
+      "category": "vaInputs",
+      "id": "19d84300953d47a1b2f99f1a9f7118e6",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "58e5b2777521450894ed568c30ba78e0": {
+      "id": "58e5b2777521450894ed568c30ba78e0",
+      "name": "create_incident",
+      "label": "Create Incident",
+      "varType": "reference",
+      "table": "incident",
+      "inactive": false,
+      "category": "vaInputs",
+      "nodeId": "4218e06910d8486cbafb3c1006767dba",
+      "isHidden": false
+    },
+    "446f683c66514f51ae4469915f934a19": {
+      "id": "446f683c66514f51ae4469915f934a19",
+      "name": "create_incident_2",
+      "label": "Create Incident 2",
+      "varType": "reference",
+      "table": "incident",
+      "inactive": false,
+      "category": "vaInputs",
+      "nodeId": "556d5239ace3442e8d9d54ee24714372",
+      "isHidden": false
+    },
+    "bbc954017e63403a802125c1fa471df5": {
+      "id": "bbc954017e63403a802125c1fa471df5",
+      "name": "ai_data_collector_a9f4b108a6e542869c3018817d30c9d6_output",
+      "label": "ai_data_collector_a9f4b108a6e542869c3018817d30c9d6_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "2b496a471bad4e488b67fe6bea901231": {
+      "id": "2b496a471bad4e488b67fe6bea901231",
+      "varType": "reference",
+      "category": "vaInputs",
+      "label": "Prodigy",
+      "name": "prodigy",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "glide_record",
+      "table": "sys_user",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "a9f4b108a6e542869c3018817d30c9d6",
+      "isHidden": false,
+      "description": "Please select user who's device has been lost / stolen\nAdditional instructions:\nFor this input the data should be extracted from the user input if it has a value from this list of words: @device,device"
+    },
+    "b430abd3f1ac406a82baa3f919e65635": {
+      "id": "b430abd3f1ac406a82baa3f919e65635",
+      "name": "ai_data_collector_bee5e0d7385c486180e1cb432f127e9c_output",
+      "label": "ai_data_collector_bee5e0d7385c486180e1cb432f127e9c_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "4c7697b8fec64d20ac7f41c1e3ba09f6": {
+      "id": "4c7697b8fec64d20ac7f41c1e3ba09f6",
+      "varType": "reference",
+      "category": "vaInputs",
+      "label": "Device",
+      "name": "device",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "glide_record",
+      "table": "cmdb_ci",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "bee5e0d7385c486180e1cb432f127e9c",
+      "isHidden": false,
+      "description": "Please select device-s that have been stolen"
+    },
+    "96b9bd3da14246aab4970e4a9c1684e4": {
+      "id": "96b9bd3da14246aab4970e4a9c1684e4",
+      "name": "ai_data_collector_4f634bf907bf4fd7bdc529d5c20389a2_output",
+      "label": "ai_data_collector_4f634bf907bf4fd7bdc529d5c20389a2_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "6fc942419b294253bf627f668b94cdfb": {
+      "id": "6fc942419b294253bf627f668b94cdfb",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "label": "Device 2 Boolean",
+      "name": "device_2_boolean",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "4f634bf907bf4fd7bdc529d5c20389a2",
+      "isHidden": false,
+      "description": "Do you want to report another device?"
+    },
+    "a8292f84d31e4b6095df81437ec9c28d": {
+      "id": "a8292f84d31e4b6095df81437ec9c28d",
+      "name": "ai_data_collector_57575b062fc9414286217d65b51914ec_output",
+      "label": "ai_data_collector_57575b062fc9414286217d65b51914ec_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "63483bb195784facaaeb8a7a56201b04": {
+      "id": "63483bb195784facaaeb8a7a56201b04",
+      "varType": "reference",
+      "category": "vaInputs",
+      "label": "Device 2 (2)",
+      "name": "device_2",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "glide_record",
+      "table": "cmdb_ci",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "57575b062fc9414286217d65b51914ec",
+      "isHidden": false,
+      "description": "Please select another device"
+    },
+    "78d0ed0c05b7485ca8cd09a42c74854b": {
+      "id": "78d0ed0c05b7485ca8cd09a42c74854b",
+      "name": "ai_data_collector_463ce865122d40b29e9a7bb7205521f8_output",
+      "label": "ai_data_collector_463ce865122d40b29e9a7bb7205521f8_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "2836c309f2af459ca72ac03840445ee2": {
+      "id": "2836c309f2af459ca72ac03840445ee2",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "label": "Contact (2)",
+      "name": "contact_2",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "463ce865122d40b29e9a7bb7205521f8",
+      "isHidden": false,
+      "description": "Do you want to provide any alternative contact details (phone number)?"
+    },
+    "2356cfae4be048d7a48229414c244c17": {
+      "id": "2356cfae4be048d7a48229414c244c17",
+      "name": "ai_data_collector_89d9ebf3e08c431a8635d08700506414_output",
+      "label": "ai_data_collector_89d9ebf3e08c431a8635d08700506414_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "ffc4ffdd05ec49af94d15566aac69731": {
+      "id": "ffc4ffdd05ec49af94d15566aac69731",
+      "varType": "string",
+      "category": "vaInputs",
+      "label": "Contact",
+      "name": "contact",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "89d9ebf3e08c431a8635d08700506414",
+      "isHidden": false,
+      "description": "please provide phone number"
+    },
+    "850eb7e007444a7fb7471cfd43bb99ba": {
+      "id": "850eb7e007444a7fb7471cfd43bb99ba",
+      "name": "ai_data_collector_d82b604fa5f84442809f66722ce3067a_output",
+      "label": "ai_data_collector_d82b604fa5f84442809f66722ce3067a_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "2ac7025a47ad44ca9086538abddfd6fc": {
+      "id": "2ac7025a47ad44ca9086538abddfd6fc",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "label": "Intro",
+      "name": "intro",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "d82b604fa5f84442809f66722ce3067a",
+      "isHidden": false,
+      "description": "You are about to create a Lost/Stolen Incident. \n\nPlease be aware that you can only create it for yourself or your subordinate. If you need to create it for a colleague, please ask their manager to do so.\n\nDo you want to continue?"
+    }
+  }
+}</graph>
+        <key_phrases>L/S to migrate,Lost / Stolen Device 4</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>llm</model_type>
+        <modify_confirmation_enabled>true</modify_confirmation_enabled>
+        <name>L/S to migrate-LLM 2</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id>33ca378f3b84e210f50dda1c95e45af3</root_topic_id>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id>a9d59c133b0ce210f50dda1c95e45a51</source_topic_id>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 00:48:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d99658d33b0ce210f50dda1c95e45a2a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>L/S to migrate-LLM 2</sys_name>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sys_cb_topic_d99658d33b0ce210f50dda1c95e45a2a</sys_update_name>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:06:51</sys_updated_on>
+        <title>L/S to migrate</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=d99658d33b0ce210f50dda1c95e45a2a"/>
+</record_update>

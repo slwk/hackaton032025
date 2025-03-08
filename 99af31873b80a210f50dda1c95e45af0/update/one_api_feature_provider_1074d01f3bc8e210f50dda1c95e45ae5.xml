@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="one_api_feature_provider">
+    <one_api_feature_provider action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <feature display_value="3e2add54a3914210f066d78446fcda6b">dc74d01f3bc8e210f50dda1c95e45ae1</feature>
+        <feature_service display_value="OneExtendGenericProvider">5233278353111110c271ddeeff7b129b</feature_service>
+        <feature_service_factory><![CDATA[(function() { return new global.OneExtendGenericProvider(); })()]]></feature_service_factory>
+        <name>VA Topic Description provider</name>
+        <short_description>Auto Generated </short_description>
+        <sys_class_name>one_api_feature_provider</sys_class_name>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 00:39:33</sys_created_on>
+        <sys_id>1074d01f3bc8e210f50dda1c95e45ae5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VA Topic Description provider</sys_name>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>one_api_feature_provider_1074d01f3bc8e210f50dda1c95e45ae5</sys_update_name>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 00:39:33</sys_updated_on>
+        <type>FDIH Subflow</type>
+        <type_document display_value="Now LLM Integration">936e514a53b3b110f028ddeeff7b128c</type_document>
+    </one_api_feature_provider>
+</record_update>

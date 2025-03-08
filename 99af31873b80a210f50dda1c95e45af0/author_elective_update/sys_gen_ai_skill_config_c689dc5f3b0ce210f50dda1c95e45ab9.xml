@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill_config">
+    <sys_gen_ai_skill_config action="DELETE">
+        <active>false</active>
+        <channels/>
+        <discoverable>false</discoverable>
+        <hint/>
+        <skill_id display_value="Lost / Stolen Device">0e89dc5f3b0ce210f50dda1c95e45ab6</skill_id>
+        <supervision/>
+        <sys_class_name/>
+        <sys_created_by/>
+        <sys_created_on/>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>c689dc5f3b0ce210f50dda1c95e45ab9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope/>
+        <sys_update_name>sys_gen_ai_skill_config_c689dc5f3b0ce210f50dda1c95e45ab9</sys_update_name>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:01:55</sys_updated_on>
+        <use_knowledge_graph>false</use_knowledge_graph>
+        <visible>false</visible>
+    </sys_gen_ai_skill_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application/>
+        <file_path/>
+        <instance_id>83a9bffb93311650c4e8ddd548373c69</instance_id>
+        <instance_name>democustomerwf91576</instance_name>
+        <name>sys_gen_ai_skill_config_c689dc5f3b0ce210f50dda1c95e45ab9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill_config"><sys_gen_ai_skill_config action="INSERT_OR_UPDATE"><active>false</active><channels/><discoverable>false</discoverable><hint/><skill_id display_value="Lost / Stolen Device">0e89dc5f3b0ce210f50dda1c95e45ab6</skill_id><supervision/><sys_class_name/><sys_created_by/><sys_created_on/><sys_domain>global</sys_domain><sys_domain_path/><sys_id>c689dc5f3b0ce210f50dda1c95e45ab9</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package/><sys_policy/><sys_scope/><sys_update_name>sys_gen_ai_skill_config_c689dc5f3b0ce210f50dda1c95e45ab9</sys_update_name><sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by><sys_updated_on>2025-03-08 01:01:55</sys_updated_on><use_knowledge_graph>false</use_knowledge_graph><visible>false</visible></sys_gen_ai_skill_config></record_update>]]></payload>
+        <payload_hash>-1929462307</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>f89346033bc0a210f50dda1c95e45a5a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 01:01:56</sys_created_on>
+        <sys_id>5899909f3b0ce210f50dda1c95e45a92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1957345ea990000001</sys_recorded_at>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:01:56</sys_updated_on>
+        <type>Generative AI Skill Config</type>
+        <update_guid>5c99909f390ce21066e2dc041314d891</update_guid>
+        <update_guid_history>5c99909f390ce21066e2dc041314d891:-1929462307,2b89509f610ce2107da17647edd3f392:-940818380,df89509fbb0ce2107556418e182a2847:982371813,de89109fb30ce21023f85cdbe687f21a:-1475715201</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 01:15:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_gen_ai_skill_config">sys_gen_ai_skill_config</sys_db_object>
+        <sys_id>6488cb1fd42743f48f15e35645fdd984</sys_id>
+        <sys_metadata>c689dc5f3b0ce210f50dda1c95e45ab9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_scope_delete display_value="">26608f88a1b8430caa47f1bf87b021a1</sys_scope_delete>
+        <sys_update_name>sys_gen_ai_skill_config_c689dc5f3b0ce210f50dda1c95e45ab9</sys_update_name>
+        <sys_update_version display_value="sys_gen_ai_skill_config_c689dc5f3b0ce210f50dda1c95e45ab9">5899909f3b0ce210f50dda1c95e45a92</sys_update_version>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:15:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

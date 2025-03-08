@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic/>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"8b3c370ef7104d4fbed6203e77cb2806","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"8b3c370ef7104d4fbed6203e77cb2806"}],"goals":[{"name":"primary","trigger_id":"8b3c370ef7104d4fbed6203e77cb2806","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"fc3ef004a3964377a0f9c9ef3779cfb4","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"88fe521be20a44f48accba939f22118c","name":"End","expert_mode":false},{"type":"LibraryCall","library_topic_name":"Data Collector","library_topic_id":"4c19933e4322211006650464dbb8f22d","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"definition","value":{"type":"String","mode":"script","value":"(function execute() {\n        var config = {\n            configuration: {\"purpose\":\"{{0}}\",\"inputs\":[{\"name\":\"user_2\",\"type\":\"string\",\"discoverable\":true,\"description\":\"find a user in sys_user table and show me devices related to this user\",\"skipMode\":\"'simple'\",\"skipCondition\":\"\\\"\\\"\",\"applicability\":\"\",\"validation\":\"\"}],\"instructions\":\"{{1}}\",\"advanced_parameters\":\"{{2}}\",\"callingTask\":\"{{3}}\",\"confirm_summary\":false,\"slots\":[],\"applicability\":\"\"}\n        };\n        return JSON.stringify(config);\n    })()"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"inputs","metadata":{"type":"String","list":true,"items":[{"type":"String","mode":"string","value":"Collect user input"},{"type":"String","mode":"string","value":""},{"type":"String","mode":"string","value":""},{"type":"String","mode":"script","value":"(function() { return vaSystem.getConversationTaskId()})()"}],"use_items":true}}],"return-value-mappings":[{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"outputs","main_topic_mapped_variable_name":"ai_data_collector_60f1bdbbe3a645de990314b42f310d42_output"}],"header_card_fields":[],"id":"60f1bdbbe3a645de990314b42f310d42","name":"User","goal_id":"primary","expert_mode":false,"variableIds":["c2f7739247cd4d6f919d8c1536c42ea5"]},{"type":"ScriptedAction","script":"(function execute() {\n                    var mappings = {\"user_2\":\"user_2\",\"ai_data_collector_60f1bdbbe3a645de990314b42f310d42_output\":\"ai_data_collector_60f1bdbbe3a645de990314b42f310d42_output\"};\n                    var output = JSON.parse(vaInputs['ai_data_collector_60f1bdbbe3a645de990314b42f310d42_output']);\n                    var variables = {\"user\":{\"category\":\"vaInputs\",\"id\":\"current-user\",\"label\":\"User\",\"name\":\"user\",\"table\":\"sys_user\",\"varType\":\"reference\"},\"ai_data_collector_1b6d1c1646b644ae91d3bd0a4154d984_output\":{\"id\":\"817be75e036042608f267a9948f35a9c\",\"name\":\"ai_data_collector_1b6d1c1646b644ae91d3bd0a4154d984_output\",\"label\":\"Ai_data_collector_1b6d1c1646b644ae91d3bd0a4154d984_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"ai_data_collector_ccbc5a10ff7344c685309a668896623d_output\":{\"id\":\"19c8126f3e994e53ab53751e387adb54\",\"name\":\"ai_data_collector_ccbc5a10ff7344c685309a668896623d_output\",\"label\":\"Ai_data_collector_ccbc5a10ff7344c685309a668896623d_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"ai_data_collector_69d867d3be77415f9809057c8bdc03ad_output\":{\"id\":\"646313dd27b4420b9c9c08e6488d86b8\",\"name\":\"ai_data_collector_69d867d3be77415f9809057c8bdc03ad_output\",\"label\":\"Ai_data_collector_69d867d3be77415f9809057c8bdc03ad_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"ai_data_collector_60f1bdbbe3a645de990314b42f310d42_output\":{\"id\":\"0c2b0ccc159145e2ba8ca6170bf90fcd\",\"name\":\"ai_data_collector_60f1bdbbe3a645de990314b42f310d42_output\",\"label\":\"Ai_data_collector_60f1bdbbe3a645de990314b42f310d42_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"user_2\":{\"id\":\"c2f7739247cd4d6f919d8c1536c42ea5\",\"varType\":\"string\",\"category\":\"vaInputs\",\"label\":\"Use (2)\",\"name\":\"user_2\",\"choices\":[{\"label\":\"\",\"value\":\"\"},{\"label\":\"\",\"value\":\"\"}],\"mode\":\"\",\"table\":\"\",\"aiInput\":true,\"inputId\":0,\"nodeId\":\"60f1bdbbe3a645de990314b42f310d42\",\"isHidden\":false,\"description\":\"find a user in sys_user table and show me devices related to this user\"}}\n                    Object.keys(output).forEach(function(key) {\n                        var mappedKey = mappings[key];\n                        if (!vaInputs[mappedKey]) {vaInputs.initialize(mappedKey);}\n                        var isMultiSelect = variables[mappedKey] &amp;&amp; variables[mappedKey].varType === 'array.reference';\n                        if (isMultiSelect) {vaInputs[mappedKey] = output[key] ? JSON.parse(output[key]) : '';}\n                        else {vaInputs[mappedKey] = output[key];}\n                    });\n                })()","id":"fc5a4aa29009429299b967e7cd97adbc","name":"60f1bdbbe3a645de990314b42f310d42_ai_data_collector_output_handler","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false}],"edges":[{"type":"Edge","source_node_id":"60f1bdbbe3a645de990314b42f310d42","target_node_id":"fc5a4aa29009429299b967e7cd97adbc","id":"e703bae6091746dd8ee11936b1ae4848"},{"type":"Edge","source_node_id":"fc5a4aa29009429299b967e7cd97adbc","target_node_id":"88fe521be20a44f48accba939f22118c","id":"5e585053162f40b482d0ac2ba72926ce"},{"type":"Edge","source_node_id":"fc3ef004a3964377a0f9c9ef3779cfb4","target_node_id":"60f1bdbbe3a645de990314b42f310d42","id":"4239c667c2bd4adca68f284cb2e9bb7e"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"ai_data_collector_1b6d1c1646b644ae91d3bd0a4154d984_output","list":false,"id":"817be75e036042608f267a9948f35a9c","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"ai_data_collector_ccbc5a10ff7344c685309a668896623d_output","list":false,"id":"19c8126f3e994e53ab53751e387adb54","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"ai_data_collector_69d867d3be77415f9809057c8bdc03ad_output","list":false,"id":"646313dd27b4420b9c9c08e6488d86b8","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"ai_data_collector_60f1bdbbe3a645de990314b42f310d42_output","list":false,"id":"0c2b0ccc159145e2ba8ca6170bf90fcd","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"user_2","description":"find a user in sys_user table and show me devices related to this user","list":false,"id":"c2f7739247cd4d6f919d8c1536c42ea5","formatType":"text","secure":false,"sensitive":false,"aiInput":true}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"99af31873b80a210f50dda1c95e45af0","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"8bd7ba833bc8a210f50dda1c95e45aa5","name":"Lost / Stolen Device","key_phrases":[],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"to be configured","model_type":"llm","foundational":false,"modify_confirmation_enabled":false,"context_profiles":["9b3d48079340da50836bb79c5cba10f8","e13840cf77d53110569156391e5a99ba"],"title":"Lost / Stolen Device","library":false,"readOnly":true,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>8bd7ba833bc8a210f50dda1c95e45aa5</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.74",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "fc3ef004a3964377a0f9c9ef3779cfb4": {
+          "id": "fc3ef004a3964377a0f9c9ef3779cfb4",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "88fe521be20a44f48accba939f22118c": {
+          "id": "88fe521be20a44f48accba939f22118c",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "60f1bdbbe3a645de990314b42f310d42": {
+          "id": "60f1bdbbe3a645de990314b42f310d42",
+          "stepType": "StandaloneAITextPrompt",
+          "name": "User",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "b280c4a1ccc84e7882e1d6ecbe44ec8a",
+              "displayName": "User",
+              "name": "user_2",
+              "description": "find a user in sys_user table and show me devices related to this user",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "string",
+              "variableId": "c2f7739247cd4d6f919d8c1536c42ea5",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "TextPrompt",
+              "enforcePrompt": false,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": "",
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "0c2b0ccc159145e2ba8ca6170bf90fcd"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_60f1bdbbe3a645de990314b42f310d42_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "c2f7739247cd4d6f919d8c1536c42ea5"
+          ]
+        }
+      },
+      "edges": [
+        {
+          "id": "7e8d9c566c1f4978b68920a01dd7d91d",
+          "edgeType": "Edge",
+          "source": "60f1bdbbe3a645de990314b42f310d42",
+          "target": "88fe521be20a44f48accba939f22118c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "4239c667c2bd4adca68f284cb2e9bb7e",
+          "edgeType": "Edge",
+          "source": "fc3ef004a3964377a0f9c9ef3779cfb4",
+          "target": "60f1bdbbe3a645de990314b42f310d42",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "817be75e036042608f267a9948f35a9c": {
+      "id": "817be75e036042608f267a9948f35a9c",
+      "name": "ai_data_collector_1b6d1c1646b644ae91d3bd0a4154d984_output",
+      "label": "Ai_data_collector_1b6d1c1646b644ae91d3bd0a4154d984_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "19c8126f3e994e53ab53751e387adb54": {
+      "id": "19c8126f3e994e53ab53751e387adb54",
+      "name": "ai_data_collector_ccbc5a10ff7344c685309a668896623d_output",
+      "label": "Ai_data_collector_ccbc5a10ff7344c685309a668896623d_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "646313dd27b4420b9c9c08e6488d86b8": {
+      "id": "646313dd27b4420b9c9c08e6488d86b8",
+      "name": "ai_data_collector_69d867d3be77415f9809057c8bdc03ad_output",
+      "label": "Ai_data_collector_69d867d3be77415f9809057c8bdc03ad_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "0c2b0ccc159145e2ba8ca6170bf90fcd": {
+      "id": "0c2b0ccc159145e2ba8ca6170bf90fcd",
+      "name": "ai_data_collector_60f1bdbbe3a645de990314b42f310d42_output",
+      "label": "Ai_data_collector_60f1bdbbe3a645de990314b42f310d42_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "c2f7739247cd4d6f919d8c1536c42ea5": {
+      "id": "c2f7739247cd4d6f919d8c1536c42ea5",
+      "varType": "string",
+      "category": "vaInputs",
+      "label": "Use (2)",
+      "name": "user_2",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "60f1bdbbe3a645de990314b42f310d42",
+      "isHidden": false,
+      "description": "find a user in sys_user table and show me devices related to this user"
+    }
+  }
+}</graph>
+        <name>Lost / Stolen Device</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 01:01:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a989dc5f3b0ce210f50dda1c95e45a34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sys_cb_design_topic_a989dc5f3b0ce210f50dda1c95e45a34</sys_update_name>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:01:46</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

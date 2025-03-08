@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_capability">
+    <sys_one_extend_capability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Identify common issues and recurring patterns between the current incidents and its children. Make investigation recommendations</description>
+        <external>true</external>
+        <metadata>{"isGuidedStep":false}</metadata>
+        <name>Summarize Child Incidents scoped</name>
+        <short_description/>
+        <sys_class_name>sys_one_extend_capability</sys_class_name>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-07 22:53:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5c1cb7833bc4e210f50dda1c95e45ac1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Summarize Child Incidents scoped</sys_name>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sys_one_extend_capability_5c1cb7833bc4e210f50dda1c95e45ac1</sys_update_name>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-07 22:53:04</sys_updated_on>
+        <type>skill</type>
+    </sys_one_extend_capability>
+    <sys_translated_text action="delete_multiple" query="documentkey=5c1cb7833bc4e210f50dda1c95e45ac1"/>
+</record_update>

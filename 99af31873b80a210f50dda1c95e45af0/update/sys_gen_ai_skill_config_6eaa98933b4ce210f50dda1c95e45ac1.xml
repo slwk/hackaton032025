@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill_config">
+    <sys_gen_ai_skill_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <channels/>
+        <discoverable>true</discoverable>
+        <hint/>
+        <skill_id display_value="L/S to migrate">a2aa98933b4ce210f50dda1c95e45abf</skill_id>
+        <supervision/>
+        <sys_class_name>sys_gen_ai_skill_config</sys_class_name>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 01:06:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6eaa98933b4ce210f50dda1c95e45ac1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sys_gen_ai_skill_config_6eaa98933b4ce210f50dda1c95e45ac1</sys_update_name>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:06:45</sys_updated_on>
+        <use_knowledge_graph>false</use_knowledge_graph>
+        <visible>true</visible>
+    </sys_gen_ai_skill_config>
+</record_update>

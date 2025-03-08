@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_library_usage">
+    <sys_cs_topic_library_usage action="DELETE">
+        <calling_cs_topic_id display_value="Lost / Stolen Device">6d89dc5f3b0ce210f50dda1c95e45a2d</calling_cs_topic_id>
+        <library_cs_topic_id display_value="Data Collector">4c19933e4322211006650464dbb8f22d</library_cs_topic_id>
+        <library_usage>{"type":"LibraryCall","library_topic_name":"Data Collector","library_topic_id":"4c19933e4322211006650464dbb8f22d","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"definition","value":{"type":"String","mode":"script","value":"(function execute() {\n        var config = {\n            configuration: {\"purpose\":\"{{0}}\",\"inputs\":[{\"name\":\"user_2\",\"type\":\"string\",\"discoverable\":true,\"description\":\"find a user in sys_user table and show me devices related to this user\",\"skipMode\":\"'simple'\",\"skipCondition\":\"\\\"\\\"\",\"applicability\":\"\",\"validation\":\"\"}],\"instructions\":\"{{1}}\",\"advanced_parameters\":\"{{2}}\",\"callingTask\":\"{{3}}\",\"confirm_summary\":false,\"slots\":[],\"applicability\":\"\"}\n        };\n        return JSON.stringify(config);\n    })()"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"inputs","metadata":{"type":"String","list":true,"items":[{"type":"String","mode":"string","value":"Collect user input"},{"type":"String","mode":"string","value":""},{"type":"String","mode":"string","value":""},{"type":"String","mode":"script","value":"(function() { return vaSystem.getConversationTaskId()})()"}],"use_items":true}}],"return-value-mappings":[{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"outputs","main_topic_mapped_variable_name":"ai_data_collector_60f1bdbbe3a645de990314b42f310d42_output"}],"header_card_fields":[],"id":"60f1bdbbe3a645de990314b42f310d42","name":"User","goal_id":"primary","expert_mode":false,"variableIds":["c2f7739247cd4d6f919d8c1536c42ea5"]}</library_usage>
+        <node_id>60f1bdbbe3a645de990314b42f310d42</node_id>
+        <sys_class_name>sys_cs_topic_library_usage</sys_class_name>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 01:01:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b589dc5f3b0ce210f50dda1c95e45a69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sys_cs_topic_library_usage_b589dc5f3b0ce210f50dda1c95e45a69</sys_update_name>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:01:46</sys_updated_on>
+    </sys_cs_topic_library_usage>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</application>
+        <file_path/>
+        <instance_id>83a9bffb93311650c4e8ddd548373c69</instance_id>
+        <instance_name>democustomerwf91576</instance_name>
+        <name>sys_cs_topic_library_usage_b589dc5f3b0ce210f50dda1c95e45a69</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_library_usage"><sys_cs_topic_library_usage action="INSERT_OR_UPDATE"><calling_cs_topic_id display_value="Lost / Stolen Device">6d89dc5f3b0ce210f50dda1c95e45a2d</calling_cs_topic_id><library_cs_topic_id display_value="Data Collector">4c19933e4322211006650464dbb8f22d</library_cs_topic_id><library_usage>{"type":"LibraryCall","library_topic_name":"Data Collector","library_topic_id":"4c19933e4322211006650464dbb8f22d","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"definition","value":{"type":"String","mode":"script","value":"(function execute() {\n        var config = {\n            configuration: {\"purpose\":\"{{0}}\",\"inputs\":[{\"name\":\"user_2\",\"type\":\"string\",\"discoverable\":true,\"description\":\"find a user in sys_user table and show me devices related to this user\",\"skipMode\":\"'simple'\",\"skipCondition\":\"\\\"\\\"\",\"applicability\":\"\",\"validation\":\"\"}],\"instructions\":\"{{1}}\",\"advanced_parameters\":\"{{2}}\",\"callingTask\":\"{{3}}\",\"confirm_summary\":false,\"slots\":[],\"applicability\":\"\"}\n        };\n        return JSON.stringify(config);\n    })()"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"inputs","metadata":{"type":"String","list":true,"items":[{"type":"String","mode":"string","value":"Collect user input"},{"type":"String","mode":"string","value":""},{"type":"String","mode":"string","value":""},{"type":"String","mode":"script","value":"(function() { return vaSystem.getConversationTaskId()})()"}],"use_items":true}}],"return-value-mappings":[{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"outputs","main_topic_mapped_variable_name":"ai_data_collector_60f1bdbbe3a645de990314b42f310d42_output"}],"header_card_fields":[],"id":"60f1bdbbe3a645de990314b42f310d42","name":"User","goal_id":"primary","expert_mode":false,"variableIds":["c2f7739247cd4d6f919d8c1536c42ea5"]}</library_usage><node_id>60f1bdbbe3a645de990314b42f310d42</node_id><sys_class_name>sys_cs_topic_library_usage</sys_class_name><sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by><sys_created_on>2025-03-08 01:01:46</sys_created_on><sys_domain>global</sys_domain><sys_id>b589dc5f3b0ce210f50dda1c95e45a69</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package><sys_policy/><sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope><sys_update_name>sys_cs_topic_library_usage_b589dc5f3b0ce210f50dda1c95e45a69</sys_update_name><sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by><sys_updated_on>2025-03-08 01:01:46</sys_updated_on></sys_cs_topic_library_usage></record_update>]]></payload>
+        <payload_hash>483101440</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>f89346033bc0a210f50dda1c95e45a5a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 01:01:46</sys_created_on>
+        <sys_id>b189dc5f3b0ce210f50dda1c95e45a6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1957345c20a0000001</sys_recorded_at>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:01:46</sys_updated_on>
+        <type>Topic Library Usage</type>
+        <update_guid>7589dc5fd70ce210dce7509814def16b</update_guid>
+        <update_guid_history>7589dc5fd70ce210dce7509814def16b:483101440</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-08 01:15:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_topic_library_usage">sys_cs_topic_library_usage</sys_db_object>
+        <sys_id>7017441f0292456c9bf223301a8fc710</sys_id>
+        <sys_metadata>b589dc5f3b0ce210f50dda1c95e45a69</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_scope_delete display_value="">26608f88a1b8430caa47f1bf87b021a1</sys_scope_delete>
+        <sys_update_name>sys_cs_topic_library_usage_b589dc5f3b0ce210f50dda1c95e45a69</sys_update_name>
+        <sys_update_version display_value="sys_cs_topic_library_usage_b589dc5f3b0ce210f50dda1c95e45a69">b189dc5f3b0ce210f50dda1c95e45a6c</sys_update_version>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:15:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic/>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"d2b0c1b7254744c281023a32a14fc4e6","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"d2b0c1b7254744c281023a32a14fc4e6"}],"goals":[{"name":"primary","trigger_id":"d2b0c1b7254744c281023a32a14fc4e6","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"db15e1dc3e2a4063a479abbe1dc4ef70","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"9af4885bc74d49769cfa33eb222afe36","name":"End","expert_mode":false},{"type":"LibraryCall","library_topic_name":"Data Collector","library_topic_id":"4c19933e4322211006650464dbb8f22d","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"definition","value":{"type":"String","mode":"script","value":"(function execute() {\n        var config = {\n            configuration: {\"purpose\":\"{{0}}\",\"inputs\":[{\"name\":\"user_2\",\"type\":\"string\",\"discoverable\":true,\"description\":\"Provide a first and last name of a user and give output of found users that match input\",\"skipMode\":\"'simple'\",\"skipCondition\":\"\\\"\\\"\",\"applicability\":\"\",\"validation\":\"\"}],\"instructions\":\"{{1}}\",\"advanced_parameters\":\"{{2}}\",\"callingTask\":\"{{3}}\",\"confirm_summary\":false,\"slots\":[],\"applicability\":\"\"}\n        };\n        return JSON.stringify(config);\n    })()"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"inputs","metadata":{"type":"String","list":true,"items":[{"type":"String","mode":"string","value":""},{"type":"String","mode":"string","value":"search sys_user table with provided input"},{"type":"String","mode":"string","value":""},{"type":"String","mode":"script","value":"(function() { return vaSystem.getConversationTaskId()})()"}],"use_items":true}}],"return-value-mappings":[{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"outputs","main_topic_mapped_variable_name":"ai_data_collector_10eb745bb4344be0b1f16e4dc1bec1bf_output"}],"header_card_fields":[],"id":"10eb745bb4344be0b1f16e4dc1bec1bf","name":"User details","goal_id":"primary","expert_mode":false,"variableIds":["4b27ccc690924baabfe0c60cc4d7d52b"]},{"type":"ScriptedAction","script":"(function execute() {\n                    var mappings = {\"user_2\":\"user_2\",\"ai_data_collector_10eb745bb4344be0b1f16e4dc1bec1bf_output\":\"ai_data_collector_10eb745bb4344be0b1f16e4dc1bec1bf_output\"};\n                    var output = JSON.parse(vaInputs['ai_data_collector_10eb745bb4344be0b1f16e4dc1bec1bf_output']);\n                    var variables = {\"user\":{\"category\":\"vaInputs\",\"id\":\"7f111977486f4814a6a8cf12d7d2ef22\",\"label\":\"User\",\"name\":\"user\",\"table\":\"sys_user\",\"varType\":\"reference\"},\"ai_data_collector_1b6d1c1646b644ae91d3bd0a4154d984_output\":{\"id\":\"0299b64d440548c1a17fa070a0713044\",\"name\":\"ai_data_collector_1b6d1c1646b644ae91d3bd0a4154d984_output\",\"label\":\"Ai_data_collector_1b6d1c1646b644ae91d3bd0a4154d984_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"ai_data_collector_ccbc5a10ff7344c685309a668896623d_output\":{\"id\":\"23edb7d7d6df48cb8d4548947aa64029\",\"name\":\"ai_data_collector_ccbc5a10ff7344c685309a668896623d_output\",\"label\":\"Ai_data_collector_ccbc5a10ff7344c685309a668896623d_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"ai_data_collector_69d867d3be77415f9809057c8bdc03ad_output\":{\"id\":\"e8e84e808af74a2c9da5dc5b0f917f75\",\"name\":\"ai_data_collector_69d867d3be77415f9809057c8bdc03ad_output\",\"label\":\"Ai_data_collector_69d867d3be77415f9809057c8bdc03ad_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"user_2\":{\"id\":\"4b27ccc690924baabfe0c60cc4d7d52b\",\"varType\":\"string\",\"category\":\"vaInputs\",\"label\":\"Use (2)\",\"name\":\"user_2\",\"choices\":[{\"label\":\"\",\"value\":\"\"},{\"label\":\"\",\"value\":\"\"}],\"mode\":\"\",\"table\":\"\",\"aiInput\":true,\"inputId\":0,\"nodeId\":\"10eb745bb4344be0b1f16e4dc1bec1bf\",\"isHidden\":false,\"description\":\"Provide a first and last name of a user and give output of found users that match input\"},\"ai_data_collector_10eb745bb4344be0b1f16e4dc1bec1bf_output\":{\"id\":\"8ec31d29a8494f0daab7a07792b47888\",\"name\":\"ai_data_collector_10eb745bb4344be0b1f16e4dc1bec1bf_output\",\"label\":\"Ai_data_collector_10eb745bb4344be0b1f16e4dc1bec1bf_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}}}\n                    Object.keys(output).forEach(function(key) {\n                        var mappedKey = mappings[key];\n                        if (!vaInputs[mappedKey]) {vaInputs.initialize(mappedKey);}\n                        var isMultiSelect = variables[mappedKey] &amp;&amp; variables[mappedKey].varType === 'array.reference';\n                        if (isMultiSelect) {vaInputs[mappedKey] = output[key] ? JSON.parse(output[key]) : '';}\n                        else {vaInputs[mappedKey] = output[key];}\n                    });\n                })()","id":"413101baa68e4044b047ed588752a46c","name":"10eb745bb4344be0b1f16e4dc1bec1bf_ai_data_collector_output_handler","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false}],"edges":[{"type":"Edge","source_node_id":"10eb745bb4344be0b1f16e4dc1bec1bf","target_node_id":"413101baa68e4044b047ed588752a46c","id":"af980fa79aed40fbb1c7ff4b1f8ddde0"},{"type":"Edge","source_node_id":"413101baa68e4044b047ed588752a46c","target_node_id":"9af4885bc74d49769cfa33eb222afe36","id":"aed3201df0584357a8de11470d1aba51"},{"type":"Edge","source_node_id":"db15e1dc3e2a4063a479abbe1dc4ef70","target_node_id":"10eb745bb4344be0b1f16e4dc1bec1bf","id":"d04bf5d909f04aca9e3683160740bf64"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"7f111977486f4814a6a8cf12d7d2ef22","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"ai_data_collector_1b6d1c1646b644ae91d3bd0a4154d984_output","list":false,"id":"0299b64d440548c1a17fa070a0713044","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"ai_data_collector_ccbc5a10ff7344c685309a668896623d_output","list":false,"id":"23edb7d7d6df48cb8d4548947aa64029","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"ai_data_collector_69d867d3be77415f9809057c8bdc03ad_output","list":false,"id":"e8e84e808af74a2c9da5dc5b0f917f75","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"user_2","description":"Provide a first and last name of a user and give output of found users that match input","list":false,"id":"4b27ccc690924baabfe0c60cc4d7d52b","formatType":"text","secure":false,"sensitive":false,"aiInput":true},{"type":"String","name":"ai_data_collector_10eb745bb4344be0b1f16e4dc1bec1bf_output","list":false,"id":"8ec31d29a8494f0daab7a07792b47888","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"99af31873b80a210f50dda1c95e45af0","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"3d99538f3b00e210f50dda1c95e45a92","name":"_PRVW__8750a4b2df7045419402450926b5cca5","key_phrases":[],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"to be configured","model_type":"llm","foundational":false,"modify_confirmation_enabled":false,"context_profiles":["9b3d48079340da50836bb79c5cba10f8","e13840cf77d53110569156391e5a99ba"],"title":"lost stolen Sylwek","library":false,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>3d99538f3b00e210f50dda1c95e45a92</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.74",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "db15e1dc3e2a4063a479abbe1dc4ef70": {
+          "id": "db15e1dc3e2a4063a479abbe1dc4ef70",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "9af4885bc74d49769cfa33eb222afe36": {
+          "id": "9af4885bc74d49769cfa33eb222afe36",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "10eb745bb4344be0b1f16e4dc1bec1bf": {
+          "id": "10eb745bb4344be0b1f16e4dc1bec1bf",
+          "stepType": "AiDataCollector",
+          "name": "User details",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "search sys_user table with provided input"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "b280c4a1ccc84e7882e1d6ecbe44ec8a",
+              "displayName": "User",
+              "name": "user_2",
+              "description": "Provide a first and last name of a user and give output of found users that match input",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "string",
+              "variableId": "4b27ccc690924baabfe0c60cc4d7d52b",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "TextPrompt",
+              "enforcePrompt": false,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": "",
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "8ec31d29a8494f0daab7a07792b47888"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_10eb745bb4344be0b1f16e4dc1bec1bf_output"
+          ],
+          "variableIds": [
+            "4b27ccc690924baabfe0c60cc4d7d52b"
+          ],
+          "standalone": false
+        }
+      },
+      "edges": [
+        {
+          "id": "1d1ac04f4f45435a8c04e27ecc75e51a",
+          "edgeType": "Edge",
+          "source": "10eb745bb4344be0b1f16e4dc1bec1bf",
+          "target": "9af4885bc74d49769cfa33eb222afe36",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d04bf5d909f04aca9e3683160740bf64",
+          "edgeType": "Edge",
+          "source": "db15e1dc3e2a4063a479abbe1dc4ef70",
+          "target": "10eb745bb4344be0b1f16e4dc1bec1bf",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "7f111977486f4814a6a8cf12d7d2ef22": {
+      "category": "vaInputs",
+      "id": "7f111977486f4814a6a8cf12d7d2ef22",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "0299b64d440548c1a17fa070a0713044": {
+      "id": "0299b64d440548c1a17fa070a0713044",
+      "name": "ai_data_collector_1b6d1c1646b644ae91d3bd0a4154d984_output",
+      "label": "Ai_data_collector_1b6d1c1646b644ae91d3bd0a4154d984_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "23edb7d7d6df48cb8d4548947aa64029": {
+      "id": "23edb7d7d6df48cb8d4548947aa64029",
+      "name": "ai_data_collector_ccbc5a10ff7344c685309a668896623d_output",
+      "label": "Ai_data_collector_ccbc5a10ff7344c685309a668896623d_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "e8e84e808af74a2c9da5dc5b0f917f75": {
+      "id": "e8e84e808af74a2c9da5dc5b0f917f75",
+      "name": "ai_data_collector_69d867d3be77415f9809057c8bdc03ad_output",
+      "label": "Ai_data_collector_69d867d3be77415f9809057c8bdc03ad_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "4b27ccc690924baabfe0c60cc4d7d52b": {
+      "id": "4b27ccc690924baabfe0c60cc4d7d52b",
+      "varType": "string",
+      "category": "vaInputs",
+      "label": "Use (2)",
+      "name": "user_2",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "10eb745bb4344be0b1f16e4dc1bec1bf",
+      "isHidden": false,
+      "description": "Provide a first and last name of a user and give output of found users that match input"
+    },
+    "8ec31d29a8494f0daab7a07792b47888": {
+      "id": "8ec31d29a8494f0daab7a07792b47888",
+      "name": "ai_data_collector_10eb745bb4344be0b1f16e4dc1bec1bf_output",
+      "label": "Ai_data_collector_10eb745bb4344be0b1f16e4dc1bec1bf_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    }
+  }
+}</graph>
+        <name>_PRVW__8750a4b2df7045419402450926b5cca5</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>sylwester.misztal@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-07 20:33:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2f0c5f0b3b40e210f50dda1c95e45a72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sys_cb_design_topic_2f0c5f0b3b40e210f50dda1c95e45a72</sys_update_name>
+        <sys_updated_by>sylwester.misztal@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-07 20:33:12</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>
