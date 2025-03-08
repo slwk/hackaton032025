@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Lost/Stolen Device">889cbe433b0ca210f50dda1c95e45a8c</sc_cat_item>
+        <sc_category display_value="Can We Help You ?">aef224aadb55d8504327198d139619b1</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>Kamil.Augustyniak@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-07 18:18:26</sys_created_on>
+        <sys_id>6d3d7ec33b0ca210f50dda1c95e45ae5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You ?.Lost/Stolen Device</sys_name>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sc_cat_item_category_6d3d7ec33b0ca210f50dda1c95e45ae5</sys_update_name>
+        <sys_updated_by>Kamil.Augustyniak@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-07 18:18:26</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>LostStolenDeviceAjax</name>
+        <operation display_value="execute">execute</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>Kamil.Augustyniak@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-07 22:11:36</sys_created_on>
+        <sys_id>c992b74b3b44e210f50dda1c95e45a90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LostStolenDeviceAjax</sys_name>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sys_security_acl_c992b74b3b44e210f50dda1c95e45a90</sys_update_name>
+        <sys_updated_by>Kamil.Augustyniak@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-07 22:11:36</sys_updated_on>
+        <type display_value="client_callable_script_include">client_callable_script_include</type>
+    </sys_security_acl>
+</record_update>

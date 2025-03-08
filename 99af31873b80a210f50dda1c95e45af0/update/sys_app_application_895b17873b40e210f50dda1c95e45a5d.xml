@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles>itil</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>Kamil.Augustyniak@fujitsu.com</sys_created_by>
+        <sys_created_on>2025-03-07 20:30:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>895b17873b40e210f50dda1c95e45a5d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Lost/Stolen Device</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Lost/Stolen Device" source="x_snc_lost_stole_0">99af31873b80a210f50dda1c95e45af0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Lost/Stolen Device">99af31873b80a210f50dda1c95e45af0</sys_scope>
+        <sys_update_name>sys_app_application_895b17873b40e210f50dda1c95e45a5d</sys_update_name>
+        <sys_updated_by>Kamil.Augustyniak@fujitsu.com</sys_updated_by>
+        <sys_updated_on>2025-03-07 20:30:49</sys_updated_on>
+        <title>Lost/Stolen Device</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>
